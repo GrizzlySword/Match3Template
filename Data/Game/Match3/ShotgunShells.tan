@@ -2,7 +2,6 @@
 	"class":"Lime.Frame, Lime",
 	"Animations":[
 		{
-			"ApplyZeroPose":false,
 			"Id":"Selection",
 			"Markers":[
 				{
@@ -36,18 +35,21 @@
 			"Id":"ZeroPose"
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Idle",
 			"Markers":[
 				{
-					"Action":1,
 					"Id":"Start",
 					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":46,
+					"Id":"",
+					"JumpTo":"Start"
 				}
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Show",
 			"Markers":[
 				{
@@ -56,14 +58,13 @@
 				},
 				{
 					"Action":1,
-					"Frame":5,
+					"Frame":4,
 					"Id":"Shown",
 					"JumpTo":""
 				}
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"DropDown",
 			"Markers":[
 				{
@@ -89,7 +90,6 @@
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Collect",
 			"Markers":[
 				{
@@ -105,62 +105,197 @@
 			]
 		},
 		{
-			"IsLegacy":true
+			"IsLegacy":true,
+			"Markers":[
+				{
+					"Action":1,
+					"Id":"",
+					"JumpTo":""
+				}
+			]
 		}
 	],
 	"Color":[4294967295],
 	"Nodes":[
 		{
-			"class":"Lime.SplineGear, Lime",
-			"Animators":[
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
 				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,0,0],
-						[20,0,1]
-					],
-					"TargetProperty":"SplineOffset"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Idle",
-					"ReadonlyKeys":[
-						[0,1,0]
-					],
-					"TargetProperty":"SplineOffset"
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
 				}
 			],
-			"Id":"SplineGear",
-			"SplineRef":{
-				"Id":"Spline"
+			"Font":{
+				"Name":"RobotoMed"
 			},
-			"WidgetRef":{
-				"Id":"Drop"
-			}
+			"FontHeight":10,
+			"HAlignment":1,
+			"Id":"SimpleText",
+			"Pivot":[0.5,0.5],
+			"Position":[98.441666,115.89864],
+			"Size":[29.143002,15.102039],
+			"Text":"218",
+			"VAlignment":1
 		},
 		{
-			"class":"Lime.Spline, Lime",
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
 			"Color":[4294967295],
-			"Id":"Spline",
-			"Nodes":[
+			"Components":[
 				{
-					"class":"Lime.SplinePoint, Lime",
-					"Id":"Start",
-					"Position":[0.45,0.5],
-					"TangentWeight":0
-				},
-				{
-					"class":"Lime.SplinePoint, Lime",
-					"Id":"End",
-					"Position":[-8.951853,-7.233333],
-					"TangentAngle":1.5,
-					"TangentWeight":-2.4
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
 				}
 			],
+			"Font":{
+				"Name":"RobotoMed"
+			},
+			"FontHeight":10,
+			"HAlignment":1,
+			"Id":"SimpleText",
 			"Pivot":[0.5,0.5],
-			"Position":[45,45],
-			"Size":[90,90]
+			"Position":[75,22.898651],
+			"Size":[75.143,15.102039],
+			"Text":"(no texture)",
+			"VAlignment":1
+		},
+		{
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"RobotoMed"
+			},
+			"FontHeight":8,
+			"HAlignment":1,
+			"Id":"SimpleText",
+			"Pivot":[0.5,0.5],
+			"Position":[72,126.47008],
+			"Size":[29.143002,15.102039],
+			"Text":"tris",
+			"VAlignment":1
+		},
+		{
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"RussoOne"
+			},
+			"FontHeight":13,
+			"HAlignment":1,
+			"Id":"SimpleText",
+			"Pivot":[0.5,0.5],
+			"Position":[74,12.4700775],
+			"Size":[99.143,15.102039],
+			"Text":"Vertex Colors",
+			"VAlignment":1
+		},
+		{
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"RobotoMed"
+			},
+			"FontHeight":10,
+			"HAlignment":1,
+			"Id":"SimpleText",
+			"Pivot":[0.5,0.5],
+			"Position":[72,115.89864],
+			"Size":[29.143002,15.102039],
+			"Text":"418",
+			"VAlignment":1
+		},
+		{
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"RobotoMed"
+			},
+			"FontHeight":10,
+			"HAlignment":1,
+			"Id":"SimpleText",
+			"Pivot":[0.5,0.5],
+			"Position":[45.558334,115.89864],
+			"Size":[29.143002,15.102039],
+			"Text":"198",
+			"VAlignment":1
 		},
 		{
 			"class":"Lime.Viewport3D, Lime",
@@ -179,106 +314,18 @@
 			],
 			"Animators":[
 				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[4,0,[0.7795732,0.7795732]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Show",
-					"ReadonlyKeys":[
-						[0,2,[0.4666371,0.4666371]],
-						[3,2,[0.8590273,0.8590273]],
-						[5,2,[0.7795732,0.7795732]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[1,0,true]
-					],
-					"TargetProperty":"Visible"
-				},
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"Show",
-					"ReadonlyKeys":[
-						[0,0,false],
-						[1,0,true]
-					],
-					"TargetProperty":"Visible"
-				},
-				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"DropDown",
 					"ReadonlyKeys":[
 						[0,0,"Start"]
 					],
 					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,0,"Start"]
-					],
-					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,0,"Start"]
-					],
-					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,2,[0.7795732,0.7795732]],
-						[10,2,[1.69295,1.69295]],
-						[20,2,[0.7795732,0.7795732]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[19,0,true],
-						[20,0,false]
-					],
-					"TargetProperty":"Visible"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,0,0]
-					],
-					"TargetProperty":"Rotation"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,0,0],
-						[20,0,-117.89928]
-					],
-					"TargetProperty":"Rotation"
 				}
 			],
 			"CameraRef":{
 				"Id":"Cam"
 			},
 			"Color":[4294967295],
-			"Id":"Drop",
+			"Id":"Viewport3D",
 			"Nodes":[
 				{
 					"class":"Lime.Model3D, Lime",
@@ -307,14 +354,57 @@
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[40.5,45],
-			"Scale":[0.7795732,0.7795732],
+			"Position":[72,70],
+			"Scale":[0.9,0.9],
 			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Image, Lime",
+			"Anchors":11,
+			"Color":[951432629],
+			"Id":"LineGradient",
+			"Pivot":[0.5,1],
+			"Position":[75,144.5],
+			"Scale":[1,0.16735691],
+			"Size":[1366,560.38214],
+			"TangerineFlags":4,
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Common/Masks/LineGradient"
+			},
+			"UV1":[1,0.5]
+		},
+		{
+			"class":"Lime.TiledImage, Lime",
+			"Anchors":15,
+			"Color":[4294967295],
+			"Id":"Bg",
+			"Pivot":[0.5,0.5],
+			"Position":[75,70],
+			"Size":[150,140],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Shell/Data/UI/Bg"
+			},
+			"TileSize":[256,512]
 		}
 	],
 	"Pivot":[0.5,0.5],
-	"Size":[90,90]
+	"Size":[150,140]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
