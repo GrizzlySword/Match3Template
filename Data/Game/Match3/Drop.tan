@@ -2,7 +2,33 @@
 	"class":"Lime.Frame, Lime",
 	"Animations":[
 		{
-			"ApplyZeroPose":false,
+			"Id":"Swap",
+			"Markers":[
+				{
+					"Frame":10,
+					"Id":"Forward",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
+					"Frame":30,
+					"Id":"",
+					"JumpTo":""
+				},
+				{
+					"Frame":40,
+					"Id":"Backward",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
+					"Frame":60,
+					"Id":"",
+					"JumpTo":""
+				}
+			]
+		},
+		{
 			"Id":"Selection",
 			"Markers":[
 				{
@@ -36,18 +62,21 @@
 			"Id":"ZeroPose"
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Idle",
 			"Markers":[
 				{
-					"Action":1,
 					"Id":"Start",
 					"JumpTo":""
+				},
+				{
+					"Action":2,
+					"Frame":46,
+					"Id":"",
+					"JumpTo":"Start"
 				}
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Show",
 			"Markers":[
 				{
@@ -56,14 +85,13 @@
 				},
 				{
 					"Action":1,
-					"Frame":5,
+					"Frame":4,
 					"Id":"Shown",
 					"JumpTo":""
 				}
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"DropDown",
 			"Markers":[
 				{
@@ -89,7 +117,6 @@
 			]
 		},
 		{
-			"ApplyZeroPose":false,
 			"Id":"Collect",
 			"Markers":[
 				{
@@ -141,6 +168,24 @@
 		},
 		{
 			"class":"Lime.Spline, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"AnimationId":"ZeroPose",
+					"ReadonlyKeys":[
+						[0,1,false]
+					],
+					"TargetProperty":"Enabled"
+				},
+				{
+					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[0,1,false]
+					],
+					"TargetProperty":"Enabled"
+				}
+			],
 			"Color":[4294967295],
 			"Id":"Spline",
 			"Nodes":[
@@ -163,175 +208,204 @@
 			"Size":[90,90]
 		},
 		{
-			"class":"Lime.Viewport3D, Lime",
-			"Anchors":48,
-			"Animations":[
-				{
-					"IsLegacy":true,
-					"Markers":[
-						{
-							"Action":1,
-							"Id":"Start",
-							"JumpTo":""
-						}
-					]
-				}
-			],
+			"class":"Lime.Image, Lime",
 			"Animators":[
 				{
 					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
+					"AnimationId":"Show",
 					"ReadonlyKeys":[
-						[4,0,[0.7795732,0.7795732]]
+						[0,2,[0.82912666,0.82912666]],
+						[2,2,[1.2192378,1.2192378]],
+						[4,2,[1,1]]
 					],
 					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Show",
+					"ReadonlyKeys":[
+						[0,0,[16777215]],
+						[2,0,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.NumericAnimator, Lime",
+					"AnimationId":"Show",
+					"ReadonlyKeys":[
+						[4,2,0]
+					],
+					"TargetProperty":"Rotation"
 				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Show",
-					"ReadonlyKeys":[
-						[0,2,[0.4666371,0.4666371]],
-						[3,2,[0.8590273,0.8590273]],
-						[5,2,[1,1]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[1,0,true]
-					],
-					"TargetProperty":"Visible"
-				},
-				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
-					"AnimationId":"Show",
-					"ReadonlyKeys":[
-						[0,0,false],
-						[1,0,true]
-					],
-					"TargetProperty":"Visible"
-				},
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
 					"AnimationId":"DropDown",
 					"ReadonlyKeys":[
-						[0,0,"Start"]
-					],
-					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,0,"Start"]
-					],
-					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Animator`1[[System.String]], Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,0,"Start"]
-					],
-					"TargetProperty":"Trigger"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"Collect",
-					"ReadonlyKeys":[
-						[0,2,[0.7795732,0.7795732]],
-						[10,2,[1.69295,1.69295]],
-						[20,2,[0.7795732,0.7795732]]
+						[0,0,[1,1]],
+						[3,0,[0.8595998,1.1162076]],
+						[10,2,[0.8595998,1.1162076]],
+						[13,2,[1.1056985,0.767105]],
+						[16,2,[0.79885703,1.0416505]],
+						[19,2,[1,1]]
 					],
 					"TargetProperty":"Scale"
 				},
 				{
-					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[10,2,[45,45]],
+						[13,2,[45,60]],
+						[16,2,[45,40]],
+						[19,2,[45,45]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
 					"AnimationId":"Collect",
 					"ReadonlyKeys":[
-						[19,0,true],
-						[20,0,false]
+						[19,0,[4294967295]],
+						[20,0,[16777215]]
 					],
-					"TargetProperty":"Visible"
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Idle",
+					"ReadonlyKeys":[
+						[0,1,[4294967295]]
+					],
+					"TargetProperty":"Color"
 				},
 				{
 					"class":"Lime.NumericAnimator, Lime",
+					"AnimationId":"Idle",
+					"ReadonlyKeys":[
+						[0,2,0],
+						[15,2,-7.1558228],
+						[29,2,4.1101227],
+						[46,2,0]
+					],
+					"TargetProperty":"Rotation"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Idle",
+					"ReadonlyKeys":[
+						[0,1,[45,45]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Selection",
+					"ReadonlyKeys":[
+						[0,2,[1,1]],
+						[1,2,[1,1]],
+						[4,2,[1.1459895,1.1459895]],
+						[8,2,[1.1459895,1.1459895]],
+						[11,2,[1,1]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.NumericAnimator, Lime",
+					"AnimationId":"Selection",
+					"ReadonlyKeys":[
+						[0,2,0]
+					],
+					"TargetProperty":"Rotation"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
 					"AnimationId":"ZeroPose",
 					"ReadonlyKeys":[
-						[0,0,0]
+						[0,1,[45,45]]
 					],
-					"TargetProperty":"Rotation"
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[0,1,[45,45]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[10,132608,[90,90]],
+						[20,132608,[125.59013,125.59013]],
+						[30,0,[90,90]],
+						[40,132608,[90,90]],
+						[50,132608,[71.26529,71.26529]],
+						[60,0,[90,90]]
+					],
+					"TargetProperty":"Size"
 				},
 				{
 					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Collect",
+					"AnimationId":"Swap",
 					"ReadonlyKeys":[
-						[0,0,0],
-						[20,0,-117.89928]
+						[10,0,0],
+						[20,0,180],
+						[30,0,360],
+						[40,0,0],
+						[50,0,-180],
+						[60,0,-360]
 					],
 					"TargetProperty":"Rotation"
-				}
-			],
-			"CameraRef":{
-				"Id":"Cam"
-			},
-			"Color":[4294967295],
-			"Id":"Drop",
-			"Nodes":[
-				{
-					"class":"Lime.Model3D, Lime",
-					"Animators":[
-						{
-							"class":"Lime.Animator`1[[System.String]], Lime",
-							"ReadonlyKeys":[
-								[0,0,"Start@Take 001"]
-							],
-							"TargetProperty":"Trigger"
-						},
-						{
-							"class":"Lime.Animator`1[[System.String]], Lime",
-							"AnimationId":"ZeroPose",
-							"ReadonlyKeys":[
-								[0,0,null]
-							],
-							"TargetProperty":"Trigger"
-						},
-						{
-							"class":"Lime.Animator`1[[System.String]], Lime",
-							"AnimationId":"DropDown",
-							"ReadonlyKeys":[
-								[0,0,"Start@Take 001"]
-							],
-							"TargetProperty":"Trigger"
-						}
-					],
-					"ContentsPath":"Drop/ShotgunShells",
-					"Id":"Model3D",
-					"Rotation":[-0.4560005,-0.07263135,-0.13952354,0.8759688]
 				},
 				{
-					"class":"Lime.Camera3D, Lime",
-					"AspectRatio":1,
-					"FarClipPlane":1E4,
-					"FieldOfView":0.7853982,
-					"Id":"Cam",
-					"NearClipPlane":0.001,
-					"OrthographicSize":1,
-					"Position":[0,0,1.9571816]
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"ZeroPose",
+					"ReadonlyKeys":[
+						[0,1,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[0,1,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"ZeroPose",
+					"ReadonlyKeys":[
+						[0,1,[1,1]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Swap",
+					"ReadonlyKeys":[
+						[0,1,[1,1]]
+					],
+					"TargetProperty":"Scale"
 				}
 			],
+			"Color":[4294967295],
+			"Id":"Drop",
 			"Pivot":[0.5,0.5],
 			"Position":[45,45],
-			"Scale":[0.7795732,0.7795732],
-			"Size":[90,90]
+			"Size":[90,90],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"Drop/Drop"
+			}
 		}
 	],
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
-
 
 
 
