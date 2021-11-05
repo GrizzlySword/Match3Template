@@ -70,25 +70,25 @@
 			"Markers":[
 				{
 					"Action":1,
-					"Id":"Landscape",
+					"Id":"@Landscape",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
 					"Frame":10,
-					"Id":"Portrait",
+					"Id":"@Portrait",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
 					"Frame":20,
-					"Id":"TabletLandscape",
+					"Id":"@TabletLandscape",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
 					"Frame":30,
-					"Id":"TabletPortrait",
+					"Id":"@TabletPortrait",
 					"JumpTo":""
 				}
 			]
@@ -183,7 +183,7 @@
 			"Components":[
 				{
 					"class":"Match3Template.Types.DialogActionComponent, Match3Template.Types",
-					"Action": {
+					"Action":{
 						"ActiveDialogAnimation":"Hide@Appear",
 						"ScenePath":"Game/Levels/Level1"
 					}
@@ -593,6 +593,7 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
