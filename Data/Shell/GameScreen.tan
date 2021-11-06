@@ -124,25 +124,25 @@
 			"Markers":[
 				{
 					"Action":1,
-					"Id":"@Landscape",
-					"JumpTo":""
-				},
-				{
-					"Action":1,
-					"Frame":10,
 					"Id":"@Portrait",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
+					"Frame":10,
+					"Id":"@TabletPortrait",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
 					"Frame":20,
-					"Id":"@TabletLandscape",
+					"Id":"@Landscape",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
 					"Frame":30,
-					"Id":"@TabletPortrait",
+					"Id":"@TabletLandscape",
 					"JumpTo":""
 				}
 			]
@@ -220,8 +220,8 @@
 			"ContentsPath":"LevelBuyMoves",
 			"Id":"LevelBuyMoves",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":768,
 			"Visible":false
 		},
@@ -253,8 +253,8 @@
 			"ContentsPath":"LevelWin",
 			"Id":"LevelWin",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":1280,
 			"Visible":false
 		},
@@ -286,8 +286,8 @@
 			"ContentsPath":"LevelLose",
 			"Id":"LevelLose",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":256,
 			"Visible":false
 		},
@@ -304,50 +304,45 @@
 					"ContentsPath":"Externals/BtnX",
 					"Id":"BtnExit",
 					"Pivot":[0.5,0.5],
-					"Position":[1300.3335,64],
+					"Position":[702.3335,64],
 					"Scale":[0.8,0.8],
 					"Size":[128,128]
 				},
 				{
 					"class":"Lime.Frame, Lime",
+					"Anchors":48,
 					"Color":[4294967295],
 					"Id":"Limits",
 					"Nodes":[
 						{
-							"class":"Lime.SimpleText, Lime",
-							"Anchors":20,
+							"class":"Lime.Image, Lime",
+							"Blending":3,
 							"Color":[4294967295],
-							"Components":[
-								{
-									"class":"Lime.SignedDistanceFieldComponent, Lime",
-									"Dilate":2,
-									"Gradient":[
-										{
-											"Color":[4294967295]
-										},
-										{
-											"Color":[4278190080],
-											"Position":1
-										}
-									]
-								}
-							],
-							"Font":{
-								"Name":"RussoOne"
-							},
-							"FontHeight":44,
-							"HAlignment":1,
-							"Id":"LimitsValue",
-							"OverflowMode":1,
-							"Pivot":[0.50000006,0.5],
-							"Position":[168.5,88],
-							"Size":[83.99645,64],
-							"Text":"24",
-							"VAlignment":1
+							"Id":"IconMoves",
+							"Pivot":[0.5,0.5],
+							"Position":[69.33258,27.289062],
+							"Rotation":19.937561,
+							"Size":[50,64],
+							"Texture":{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"Data/UI/IconMoves"
+							}
+						},
+						{
+							"class":"Lime.Image, Lime",
+							"Color":[4294967295],
+							"Id":"IconMoves",
+							"Pivot":[0.5,0.5],
+							"Position":[69.33258,27.289062],
+							"Rotation":19.937561,
+							"Size":[50,64],
+							"Texture":{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"Data/UI/IconMoves"
+							}
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
-							"Anchors":20,
 							"Color":[4294967295],
 							"Components":[
 								{
@@ -368,38 +363,67 @@
 								"Name":"RussoOne"
 							},
 							"FontHeight":44,
-							"HAlignment":1,
-							"Id":"Limits",
+							"Id":"LimitsValue",
 							"OverflowMode":1,
-							"Pivot":[0.5,0.5],
-							"Position":[168.5,32],
-							"Size":[337,64],
-							"Text":"Ходы:",
+							"Pivot":[0,0.5],
+							"Position":[108.08438,34.666687],
+							"Size":[83.99645,64],
+							"Text":"24",
 							"VAlignment":1
 						}
 					],
-					"Pivot":[0.5,0.5],
-					"Position":[145.00473,122.99304],
-					"Size":[337,120]
+					"Pivot":[0,0.5],
+					"Position":[480.75003,552.0443],
+					"Size":[200,64]
 				},
 				{
 					"class":"Lime.Frame, Lime",
+					"Anchors":48,
 					"Color":[4294967295],
 					"Id":"Goals",
 					"Nodes":[
 						{
-							"class":"Lime.Image, Lime",
-							"Color":[4294933475],
+							"class":"Lime.Viewport3D, Lime",
+							"Animators":[
+								{
+									"class":"Lime.Animator`1[[System.String]], Lime",
+									"AnimationId":"Resolutions",
+									"ReadonlyKeys":[
+										[0,0,"Start"],
+										[10,0,"Start"],
+										[20,0,"Start"],
+										[30,0,"Start"]
+									],
+									"TargetProperty":"Trigger"
+								}
+							],
+							"CameraRef":{
+								"Id":"Cam"
+							},
+							"Color":[4294967295],
 							"Id":"GoalsIcon",
+							"Nodes":[
+								{
+									"class":"Lime.Model3D, Lime",
+									"ContentsPath":"/Game/Match3/Drop/ShotgunShells",
+									"Id":"Model3D",
+									"Rotation":[-0.4560005,-0.07263135,-0.13952354,0.8759688]
+								},
+								{
+									"class":"Lime.Camera3D, Lime",
+									"AspectRatio":1,
+									"FarClipPlane":1E4,
+									"FieldOfView":0.7853982,
+									"Id":"Cam",
+									"NearClipPlane":0.001,
+									"OrthographicSize":1,
+									"Position":[0,0,1.9571816]
+								}
+							],
 							"Pivot":[0.5,0.5],
-							"Position":[146.49527,87.00696],
-							"Scale":[0.68224585,0.68224585],
-							"Shader":3,
-							"Size":[90,90],
-							"Texture":{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Game/Match3/Drop/Drop"
-							}
+							"Position":[60,32],
+							"Scale":[0.77067715,0.77067715],
+							"Size":[90,90]
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
@@ -427,61 +451,20 @@
 							"Id":"GoalsValue",
 							"OverflowMode":1,
 							"Pivot":[0,0.5],
-							"Position":[184,88],
+							"Position":[114.5,32],
 							"Size":[83.99645,64],
 							"Text":"3",
-							"VAlignment":1
-						},
-						{
-							"class":"Lime.SimpleText, Lime",
-							"Anchors":20,
-							"Color":[4294967295],
-							"Components":[
-								{
-									"class":"Lime.SignedDistanceFieldComponent, Lime",
-									"Dilate":2,
-									"Gradient":[
-										{
-											"Color":[4294967295]
-										},
-										{
-											"Color":[4278190080],
-											"Position":1
-										}
-									]
-								}
-							],
-							"Font":{
-								"Name":"RussoOne"
-							},
-							"FontHeight":44,
-							"HAlignment":1,
-							"Id":"Goals",
-							"OverflowMode":1,
-							"Pivot":[0.5,0.5],
-							"Position":[168.5,32],
-							"Size":[337,64],
-							"Text":"Цели:",
 							"VAlignment":1
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[145.00473,266.99304],
-					"Size":[337,120]
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Color":[4294967295],
-					"ContentsPath":"Externals/Win",
-					"Id":"Win",
-					"Pivot":[0.5,0.5],
-					"Position":[12.5,116.5],
-					"Size":[512,512]
+					"Position":[187.25,552.0443],
+					"Size":[200,64]
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":4
 		},
 		{
@@ -505,8 +488,8 @@
 					"Color":[4294967295],
 					"Id":"Image",
 					"Pivot":[0.5,0.5],
-					"Position":[360,360],
-					"Size":[720,720],
+					"Position":[373,373],
+					"Size":[746,746],
 					"TangerineFlags":6,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -516,13 +499,14 @@
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[720,720],
+			"Position":[384,975],
+			"Size":[746,746],
 			"TangerineFlags":512
 		}
 	],
-	"Size":[1366,768]
+	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

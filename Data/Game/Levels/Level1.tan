@@ -128,7 +128,7 @@
 	"Nodes":[
 		{
 			"class":"Lime.Frame, Lime",
-			"Anchors":48,
+			"Anchors":15,
 			"Animators":[
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
@@ -152,16 +152,6 @@
 				{
 					"class":"Match3Template.Types.BoardConfigComponent, Match3Template.Types",
 					"AllowedPieces":[
-						0,
-						1,
-						2,
-						3,
-						4,
-						0,
-						1,
-						2,
-						3,
-						4,
 						0,
 						1,
 						2,
@@ -216,8 +206,8 @@
 			"ContentsPath":"/Shell/GameScreen",
 			"Id":"GameScreen",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":4
 		},
 		{
@@ -358,7 +348,7 @@
 					"Color":[4294933475],
 					"Id":"Goal01",
 					"Pivot":[0.5,1],
-					"Position":[1211.5,564],
+					"Position":[613.5,863],
 					"Scale":[0,0],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -386,7 +376,7 @@
 					"Color":[4294933475],
 					"Id":"Goal02",
 					"Pivot":[0.5,1],
-					"Position":[1211.5,434],
+					"Position":[613.5,733],
 					"Scale":[0,0],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -414,7 +404,7 @@
 					"Color":[4294933475],
 					"Id":"Goal03",
 					"Pivot":[0.5,1],
-					"Position":[1211.5,304],
+					"Position":[613.5,603],
 					"Scale":[0,0],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -423,8 +413,8 @@
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768]
+			"Position":[384,683],
+			"Size":[768,1366]
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -438,8 +428,8 @@
 					"Color":[939524096],
 					"Id":"LineGradient",
 					"Pivot":[0.5,1],
-					"Position":[683,773],
-					"Size":[1366,560.38214],
+					"Position":[384,1371],
+					"Size":[768,560.38214],
 					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -448,25 +438,24 @@
 					"UV1":[1,0.5]
 				},
 				{
-					"class":"Lime.TiledImage, Lime",
-					"Anchors":15,
-					"Color":[4280098295],
-					"Id":"Bg",
+					"class":"Lime.Image, Lime",
+					"Anchors":48,
+					"Color":[4294967295],
+					"Id":"Match3BG",
 					"Pivot":[0.5,0.5],
-					"Position":[683,381.5],
-					"Size":[1366,763],
+					"Position":[384,663],
+					"Size":[768,1664],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"/Shell/Data/UI/Bg"
-					},
-					"TileSize":[256,512]
+						"SerializationPath":"Data/Match3BG"
+					}
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"TangerineFlags":1280
 		}
 	],
-	"Size":[1366,768]
+	"Size":[768,1366]
 }

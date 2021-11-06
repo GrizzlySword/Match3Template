@@ -20,25 +20,25 @@
 			"Markers":[
 				{
 					"Action":1,
-					"Id":"@Landscape",
-					"JumpTo":""
-				},
-				{
-					"Action":1,
-					"Frame":10,
 					"Id":"@Portrait",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
-					"Frame":20,
-					"Id":"@TabletLandscape",
+					"Frame":10,
+					"Id":"@TabletPortrait",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
-					"Frame":30,
-					"Id":"@TabletPortrait",
+					"Frame":20,
+					"Id":"@Landscape",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
+					"Frame":40,
+					"Id":"@TabletLandscape",
 					"JumpTo":""
 				}
 			]
@@ -68,8 +68,8 @@
 			"Color":[939524096],
 			"Id":"LineGradient",
 			"Pivot":[0.5,1],
-			"Position":[683,773],
-			"Size":[1366,560.38214],
+			"Position":[384,1371],
+			"Size":[768,560.38214],
 			"TangerineFlags":4,
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
@@ -85,9 +85,10 @@
 					"class":"Lime.Vector2Animator, Lime",
 					"AnimationId":"Resolutions",
 					"ReadonlyKeys":[
-						[0,1,[1,1]],
-						[10,1,[0.7,0.7]],
-						[30,1,[0.6,0.6]]
+						[0,1,[0.7,0.7]],
+						[10,1,[0.6,0.6]],
+						[20,1,[1,1]],
+						[40,1,[0.6,0.6]]
 					],
 					"TargetProperty":"Scale"
 				},
@@ -149,7 +150,8 @@
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,378],
+			"Position":[384,677],
+			"Scale":[0.7,0.7],
 			"Size":[792.4616,357.9218]
 		},
 		{
@@ -170,8 +172,8 @@
 			"Color":[4294967295],
 			"Id":"Bg",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
 				"SerializationPath":"Data/UI/Bg"
@@ -179,8 +181,9 @@
 			"TileSize":[256,512]
 		}
 	],
-	"Size":[1366,768]
+	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
