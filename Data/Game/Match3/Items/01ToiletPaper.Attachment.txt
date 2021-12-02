@@ -4,21 +4,16 @@
 		"Take 001":{
 			"Markers":{
 				"FlipStart":{
-					"Action":"Start",
-					"Frame":80
+					"Action":"Start"
 				},
 				"FlipEnd":{
 					"Action":"Jump",
-					"Frame":88,
-					"JumpTarget":"Start"
+					"Frame":15,
+					"JumpTarget":"FlipStart"
 				},
-				"Start":{
-					"Action":"Start"
-				},
-				"End":{
-					"Action":"Jump",
-					"Frame":75,
-					"JumpTarget":"Start"
+				"Still":{
+					"Action":"Stop",
+					"Frame":16
 				}
 			},
 			"SourceAnimationId":"Take 001"

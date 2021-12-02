@@ -184,8 +184,8 @@
 					"OverflowMode":1,
 					"Pivot":[0.5,0.5],
 					"Position":[402.66672,680.62866],
-					"Size":[548.89105,180],
-					"Text":"Убей всех Зомби!",
+					"Size":[667.891,180],
+					"Text":"Zombie! Zombie! Zombie!",
 					"TextColor":[4289984762],
 					"VAlignment":1
 				}
@@ -453,6 +453,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

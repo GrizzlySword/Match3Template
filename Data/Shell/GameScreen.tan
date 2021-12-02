@@ -487,6 +487,7 @@
 				{
 					"class":"Match3Template.Types.Match3ConfigComponent, Match3Template.Types",
 					"DelayBetweenLightningStrikes":0.01,
+					"OneCellFallTime":0.13,
 					"SwapBackOnNonMatchingSwap":true,
 					"WaitForAnimateDropDownFall":false,
 					"WaitForAnimateDropDownLand":false
@@ -518,6 +519,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
