@@ -399,7 +399,7 @@
 								}
 							],
 							"CameraRef":{
-								"Id":"Cam"
+								"Id":"Cam2"
 							},
 							"Color":[4294967295],
 							"Id":"GoalsIcon",
@@ -407,8 +407,19 @@
 								{
 									"class":"Lime.Model3D, Lime",
 									"ContentsPath":"/Game/Match3/Drop/ShotgunShells",
-									"Id":"Model3D",
-									"Rotation":[-0.4560005,-0.07263135,-0.13952354,0.8759688]
+									"Id":"Model3D"
+								},
+								{
+									"class":"Lime.Camera3D, Lime",
+									"AspectRatio":1,
+									"FarClipPlane":1E4,
+									"FieldOfView":15,
+									"Id":"Cam2",
+									"NearClipPlane":0.001,
+									"OrthographicSize":1,
+									"Position":[0.04,-1.5,0],
+									"ProjectionMode":0,
+									"Rotation":[0.7071068,0,2.9802322E-8,0.7071067]
 								},
 								{
 									"class":"Lime.Camera3D, Lime",
@@ -423,7 +434,7 @@
 							],
 							"Pivot":[0.5,0.5],
 							"Position":[60,32],
-							"Scale":[0.77067715,0.77067715],
+							"Scale":[0.7,0.7],
 							"Size":[90,90]
 						},
 						{
@@ -507,6 +518,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

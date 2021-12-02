@@ -8,7 +8,7 @@
 				},
 				"End":{
 					"Action":"Jump",
-					"Frame":90,
+					"Frame":75,
 					"JumpTarget":"Start"
 				}
 			},
