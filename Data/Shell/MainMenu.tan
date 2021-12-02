@@ -405,7 +405,7 @@
 					"Id":"LineGradient",
 					"Pivot":[0.5,1],
 					"Position":[384.00003,290.35767],
-					"Size":[807.5899,312.83264],
+					"Size":[807.5899,338.01846],
 					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -418,11 +418,12 @@
 					"Anchors":3,
 					"Color":[4278673056],
 					"Id":"WornedBar",
-					"Pivot":[0.5,0.5],
-					"Position":[336,73.833374],
-					"Rotation":3.452423,
+					"Pivot":[0.49999994,0.4999995],
+					"Position":[419.36047,73.86973],
+					"Rotation":4.2630463,
 					"Scale":[1.7505044,1.7505044],
 					"Size":[688,125],
+					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"Data/UI/WornedBar"
@@ -431,7 +432,8 @@
 			],
 			"Pivot":[1,1],
 			"Position":[768,1366],
-			"Size":[768,149]
+			"Size":[768,149],
+			"TangerineFlags":4
 		},
 		{
 			"class":"Lime.NineGrid, Lime",
@@ -451,6 +453,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

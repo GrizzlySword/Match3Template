@@ -158,7 +158,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Labels"
 							},
 							"FontHeight":60,
 							"HAlignment":1,
@@ -268,7 +268,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Labels"
 							},
 							"FontHeight":60,
 							"HAlignment":1,
@@ -378,7 +378,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Labels"
 							},
 							"FontHeight":60,
 							"HAlignment":1,
@@ -502,7 +502,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Text"
 							},
 							"FontHeight":60,
 							"Id":"Caption",
@@ -759,7 +759,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"FontHeight":41,
 							"Id":"Text",
@@ -989,7 +989,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"FontHeight":41,
 							"Id":"Text",
@@ -1219,7 +1219,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"FontHeight":41,
 							"Id":"Text",
@@ -1362,13 +1362,14 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"FontHeight":41,
 							"Id":"Text",
+							"OverflowMode":1,
 							"Pivot":[0,0.5],
 							"Position":[76,29],
-							"Size":[197.33325,55],
+							"Size":[227.333,55],
 							"Spacing":-14,
 							"Text":"Уведомления",
 							"TextColor":[4289572269],
@@ -1594,13 +1595,14 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"FontHeight":41,
 							"Id":"Text",
+							"OverflowMode":1,
 							"Pivot":[0,0.5],
 							"Position":[76,29],
-							"Size":[197.33325,55],
+							"Size":[323.2163,55],
 							"Spacing":-14,
 							"Text":"На весь экран",
 							"TextColor":[4287880191],
@@ -1721,7 +1723,7 @@
 						}
 					],
 					"Font":{
-						"Name":"RussoOne"
+						"Name":"Labels"
 					},
 					"FontHeight":60,
 					"HAlignment":1,
@@ -1789,6 +1791,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

@@ -134,8 +134,220 @@
 			"ContentsPath":"Externals/Coins",
 			"Id":"Coins",
 			"Pivot":[0.5,0.5],
-			"Position":[683,64],
+			"Position":[384,64],
 			"Size":[256,64]
+		},
+		{
+			"class":"Lime.Button, Lime",
+			"Anchors":6,
+			"Animators":[
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Appear",
+					"ReadonlyKeys":[
+						[4,0,[4294967295]],
+						[5,0,[16777215]],
+						[14,0,[16777215]],
+						[15,0,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Match3Template.Types.DialogActionComponent, Match3Template.Types",
+					"Action":{
+						"ScenePath":"Shell/MainMenu"
+					}
+				}
+			],
+			"ContentsPath":"Externals/BtnX",
+			"Id":"BtnExit",
+			"Pivot":[0.5,0.5],
+			"Position":[700,72],
+			"Scale":[0.8,0.8],
+			"Size":[128,128]
+		},
+		{
+			"class":"Lime.Button, Lime",
+			"Anchors":10,
+			"Animations":[
+				{
+					"IsLegacy":true,
+					"Markers":[
+						{
+							"Action":1,
+							"Id":"Init"
+						},
+						{
+							"Frame":10,
+							"Id":"Normal"
+						},
+						{
+							"Action":1,
+							"Frame":14
+						},
+						{
+							"Frame":18,
+							"Id":"Focus"
+						},
+						{
+							"Action":1,
+							"Frame":24
+						},
+						{
+							"Frame":28,
+							"Id":"Press"
+						},
+						{
+							"Action":1,
+							"Frame":30
+						},
+						{
+							"Frame":31,
+							"Id":"Release"
+						},
+						{
+							"Action":1,
+							"Frame":35
+						},
+						{
+							"Action":1,
+							"Frame":43,
+							"Id":"Disable"
+						}
+					]
+				}
+			],
+			"Animators":[
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Appear",
+					"ReadonlyKeys":[
+						[4,0,[4294967295]],
+						[5,0,[16777215]],
+						[14,0,[16777215]],
+						[15,0,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Match3Template.Types.DialogActionComponent, Match3Template.Types",
+					"Action":{
+						"ActiveDialogAnimation":"Hide@Appear",
+						"CloseActiveDialog":false,
+						"ScenePath":"Shell/Shop"
+					}
+				}
+			],
+			"Id":"BtnShop",
+			"Nodes":[
+				{
+					"class":"Lime.SimpleText, Lime",
+					"Anchors":15,
+					"Color":[4294967295],
+					"Components":[
+						{
+							"class":"Lime.SignedDistanceFieldComponent, Lime",
+							"Dilate":2,
+							"Gradient":[
+								{
+									"Color":[4294967295]
+								},
+								{
+									"Color":[4278190080],
+									"Position":1
+								}
+							]
+						}
+					],
+					"Font":{
+						"Name":"Text"
+					},
+					"FontHeight":60,
+					"HAlignment":1,
+					"Id":"Caption",
+					"OverflowMode":1,
+					"Pivot":[0.49999973,0.5],
+					"Position":[136.62173,42.811913],
+					"Size":[250.24399,72.624],
+					"Spacing":-10.2,
+					"Text":"Магазин",
+					"VAlignment":1
+				},
+				{
+					"class":"Lime.NineGrid, Lime",
+					"Anchors":15,
+					"Color":[4294967295],
+					"Id":"BtnOrange",
+					"LeftOffset":0.5,
+					"Pivot":[0.5,0.5],
+					"Position":[136.62181,42.811913],
+					"RightOffset":0.5,
+					"Size":[273.24362,85.623825],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/UI/BtnOrange"
+					},
+					"TopOffset":0.5
+				}
+			],
+			"Pivot":[0.5,0.5],
+			"Position":[636.89905,1061.9502],
+			"Scale":[0.8,0.8],
+			"Size":[273.24362,85.623825]
+		},
+		{
+			"class":"Lime.NineGrid, Lime",
+			"Anchors":15,
+			"Color":[4294967295],
+			"Id":"BtnOrange",
+			"LeftOffset":0.5,
+			"Pivot":[0.5,0.5],
+			"Position":[169,1246],
+			"RightOffset":0.5,
+			"Size":[128,128],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"Data/UI/BtnOrange"
+			},
+			"TopOffset":0.5
+		},
+		{
+			"class":"Lime.NineGrid, Lime",
+			"Anchors":15,
+			"Color":[4294967295],
+			"Id":"BtnOrange",
+			"LeftOffset":0.5,
+			"Pivot":[0.5,0.5],
+			"Position":[599,1246],
+			"RightOffset":0.5,
+			"Size":[128,128],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"Data/UI/BtnOrange"
+			},
+			"TopOffset":0.5
+		},
+		{
+			"class":"Lime.NineGrid, Lime",
+			"Anchors":15,
+			"Color":[4294967295],
+			"Id":"BtnOrange",
+			"LeftOffset":0.5,
+			"Pivot":[0.5,0.5],
+			"Position":[384,1231],
+			"RightOffset":0.5,
+			"Size":[128,128],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"Data/UI/BtnOrange"
+			},
+			"TopOffset":0.5
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -301,14 +513,14 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Text"
 							},
-							"FontHeight":113.3,
+							"FontHeight":74.7,
 							"HAlignment":1,
 							"Id":"Caption",
 							"OverflowMode":1,
 							"Pivot":[0.5,0.5],
-							"Position":[42.99997,62.387947],
+							"Position":[43.666656,68.38795],
 							"Scale":[0.87903506,0.87903506],
 							"Size":[74,94],
 							"Text":"?",
@@ -363,7 +575,8 @@
 						}
 					],
 					"Pivot":[0.5,0.99999994],
-					"Position":[1003.50006,437.77588],
+					"Position":[476.99988,525.1092],
+					"Scale":[1.2923621,1.2923621],
 					"Size":[84,118.775894]
 				},
 				{
@@ -441,7 +654,8 @@
 					"ContentsPath":"Externals/Bullet",
 					"Id":"Bullet03",
 					"Pivot":[0.5,0.99999994],
-					"Position":[794.8334,456.77588],
+					"Position":[314,654.38794],
+					"Scale":[1.1400977,1.1400977],
 					"Size":[84,118.775894]
 				},
 				{
@@ -519,7 +733,8 @@
 					"ContentsPath":"Externals/Bullet",
 					"Id":"Bullet02",
 					"Pivot":[0.5,0.99999994],
-					"Position":[581.1667,478.77588],
+					"Position":[474,826.38794],
+					"Scale":[1.186447,1.186447],
 					"Size":[84,118.775894]
 				},
 				{
@@ -591,7 +806,7 @@
 					"ContentsPath":"Externals/Bullet",
 					"Id":"Bullet01",
 					"Pivot":[0.5,0.99999994],
-					"Position":[362.50003,538.7759],
+					"Position":[349,1003.38794],
 					"Size":[84,118.775894]
 				},
 				{
@@ -625,175 +840,126 @@
 					"Position":[413.5,394.5],
 					"Scale":[0.2538824,0.2538824],
 					"Size":[256,512]
-				}
-			],
-			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768]
-		},
-		{
-			"class":"Lime.Button, Lime",
-			"Anchors":6,
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[4,0,[4294967295]],
-						[5,0,[16777215]],
-						[14,0,[16777215]],
-						[15,0,[4294967295]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[4294967295],
-			"Components":[
-				{
-					"class":"Match3Template.Types.DialogActionComponent, Match3Template.Types",
-					"Action":{
-						"ScenePath":"Shell/MainMenu"
-					}
-				}
-			],
-			"ContentsPath":"Externals/BtnX",
-			"Id":"BtnExit",
-			"Pivot":[0.5,0.5],
-			"Position":[1298,72],
-			"Scale":[0.8,0.8],
-			"Size":[128,128]
-		},
-		{
-			"class":"Lime.Button, Lime",
-			"Anchors":10,
-			"Animations":[
-				{
-					"IsLegacy":true,
-					"Markers":[
-						{
-							"Action":1,
-							"Id":"Init"
-						},
-						{
-							"Frame":10,
-							"Id":"Normal"
-						},
-						{
-							"Action":1,
-							"Frame":14
-						},
-						{
-							"Frame":18,
-							"Id":"Focus"
-						},
-						{
-							"Action":1,
-							"Frame":24
-						},
-						{
-							"Frame":28,
-							"Id":"Press"
-						},
-						{
-							"Action":1,
-							"Frame":30
-						},
-						{
-							"Frame":31,
-							"Id":"Release"
-						},
-						{
-							"Action":1,
-							"Frame":35
-						},
-						{
-							"Action":1,
-							"Frame":43,
-							"Id":"Disable"
-						}
-					]
-				}
-			],
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[4,0,[4294967295]],
-						[5,0,[16777215]],
-						[14,0,[16777215]],
-						[15,0,[4294967295]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[4294967295],
-			"Components":[
-				{
-					"class":"Match3Template.Types.DialogActionComponent, Match3Template.Types",
-					"Action":{
-						"ActiveDialogAnimation":"Hide@Appear",
-						"CloseActiveDialog":false,
-						"ScenePath":"Shell/Shop"
-					}
-				}
-			],
-			"Id":"BtnShop",
-			"Nodes":[
-				{
-					"class":"Lime.SimpleText, Lime",
-					"Anchors":15,
-					"Color":[4294967295],
-					"Components":[
-						{
-							"class":"Lime.SignedDistanceFieldComponent, Lime",
-							"Dilate":2,
-							"Gradient":[
-								{
-									"Color":[4294967295]
-								},
-								{
-									"Color":[4278190080],
-									"Position":1
-								}
-							]
-						}
-					],
-					"Font":{
-						"Name":"RussoOne"
-					},
-					"FontHeight":60,
-					"HAlignment":1,
-					"Id":"Caption",
-					"OverflowMode":1,
-					"Pivot":[0.49999973,0.5],
-					"Position":[136.62173,42.811913],
-					"Size":[250.24399,72.624],
-					"Spacing":-10.2,
-					"Text":"Магазин",
-					"VAlignment":1
 				},
 				{
-					"class":"Lime.NineGrid, Lime",
-					"Anchors":15,
-					"Color":[4294967295],
-					"Id":"BtnOrange",
-					"LeftOffset":0.5,
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
 					"Pivot":[0.5,0.5],
-					"Position":[136.62181,42.811913],
-					"RightOffset":0.5,
-					"Size":[273.24362,85.623825],
+					"Position":[453.0553,858.05554],
+					"Size":[24,24],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"Data/UI/BtnOrange"
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
+					"Pivot":[0.5,0.5],
+					"Position":[343.38867,698.3889],
+					"Size":[24,24],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
+					"Pivot":[0.5,0.5],
+					"Position":[450.38867,541.3889],
+					"Size":[24,24],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
+					"Pivot":[0.5,0.5],
+					"Position":[406.6109,595.94446],
+					"Size":[24,24],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
+					"Pivot":[0.5,0.5],
+					"Position":[388.6109,756.94446],
+					"Size":[24,24],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Color":[4286151033],
+					"Id":"DotBig",
+					"Pivot":[0.5,0.5],
+					"Position":[424.27753,908.6111],
+					"Size":[24,24],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/DotBig"
+					}
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":11,
+					"Animators":[
+						{
+							"class":"Lime.Color4Animator, Lime",
+							"AnimationId":"Appear",
+							"ReadonlyKeys":[
+								[0,0,[939524096]],
+								[38,0,[939524096]],
+								[44,0,[0]]
+							],
+							"TargetProperty":"Color"
+						}
+					],
+					"Color":[939524096],
+					"Id":"LineGradient",
+					"Pivot":[0.5,1],
+					"Position":[384.00003,1510.3577],
+					"Size":[807.5899,338.01846],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/LineGradient"
 					},
-					"TopOffset":0.5
+					"UV1":[1,0.5]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":3,
+					"Color":[4278673056],
+					"Id":"WornedBar",
+					"Pivot":[0.49999994,0.4999995],
+					"Position":[419.36047,1293.8698],
+					"Rotation":4.2630463,
+					"Scale":[1.7505044,1.7505044],
+					"Size":[688,125],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/UI/WornedBar"
+					}
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[1234.899,706.9502],
-			"Scale":[0.8,0.8],
-			"Size":[273.24362,85.623825]
+			"Position":[384,683],
+			"Size":[768,1366]
 		},
 		{
 			"class":"Lime.TiledImage, Lime",
@@ -814,8 +980,8 @@
 			"Color":[4294967295],
 			"Id":"Bg",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,683],
+			"Size":[768,1366],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
 				"SerializationPath":"Data/UI/Bg"
@@ -823,8 +989,9 @@
 			"TileSize":[256,512]
 		}
 	],
-	"Size":[1366,768]
+	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

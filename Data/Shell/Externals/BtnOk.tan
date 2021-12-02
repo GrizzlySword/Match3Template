@@ -274,27 +274,11 @@
 				"class":"Lime.SerializableTexture, Lime",
 				"SerializationPath":"/Shell/Data/UI/BtnOrange"
 			}
-		},
-		{
-			"class":"Lime.NineGrid, Lime",
-			"Color":[3523215360],
-			"Id":"Sh",
-			"LeftOffset":0.5,
-			"Pivot":[0.5,0.5],
-			"Position":[64.89968,74.5628],
-			"RightOffset":0.5,
-			"Rotation":5.1795807,
-			"Scale":[0.58936316,0.58936316],
-			"Size":[211.09941,207.42564],
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Common/Masks/CircleBlured"
-			},
-			"TopOffset":0.5
 		}
 	],
 	"Size":[128,128]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
