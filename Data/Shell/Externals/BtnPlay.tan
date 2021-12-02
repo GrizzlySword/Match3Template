@@ -121,52 +121,6 @@
 			}
 		},
 		{
-			"class":"Lime.SimpleText, Lime",
-			"Anchors":11,
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"ReadonlyKeys":[
-						[10,0,[4294967295]],
-						[14,0,[16777215]],
-						[18,0,[16777215]],
-						[24,0,[4294967295]],
-						[28,0,[4294967295]],
-						[30,0,[16777215]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[4294967295],
-			"Components":[
-				{
-					"class":"Lime.SignedDistanceFieldComponent, Lime",
-					"Dilate":2,
-					"Gradient":[
-						{
-							"Color":[4294967295]
-						},
-						{
-							"Color":[4278190080],
-							"Position":1
-						}
-					]
-				}
-			],
-			"Font":{
-				"Name":"RussoOne"
-			},
-			"FontHeight":32,
-			"HAlignment":1,
-			"Id":"Caption",
-			"LetterSpacing":1.6,
-			"Pivot":[0.5,0.5],
-			"Position":[64,106],
-			"Size":[118,40],
-			"Text":"PLAY",
-			"VAlignment":1
-		},
-		{
 			"class":"Lime.NineGrid, Lime",
 			"Anchors":15,
 			"Animators":[
@@ -225,27 +179,11 @@
 				"SerializationPath":"/Shell/Data/UI/BtnOrange"
 			},
 			"TopOffset":0.5
-		},
-		{
-			"class":"Lime.NineGrid, Lime",
-			"Anchors":15,
-			"BottomOffset":0.5,
-			"Color":[3523215360],
-			"Id":"Sh",
-			"LeftOffset":0.5,
-			"Pivot":[0.5,0.5],
-			"Position":[64,72.36032],
-			"RightOffset":0.5,
-			"Size":[163,159.9962],
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Common/Masks/CircleBlured"
-			},
-			"TopOffset":0.5
 		}
 	],
 	"Size":[128,128]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

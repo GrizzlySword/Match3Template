@@ -109,11 +109,31 @@
 				{
 					"class":"Lime.Image, Lime",
 					"Anchors":48,
+					"Animators":[
+						{
+							"class":"Lime.Vector2Animator, Lime",
+							"AnimationId":"Resolutions",
+							"ReadonlyKeys":[
+								[0,1,[403.3736,482.6612]],
+								[10,1,[87.99866,182.66663]]
+							],
+							"TargetProperty":"Position"
+						},
+						{
+							"class":"Lime.Vector2Animator, Lime",
+							"AnimationId":"Resolutions",
+							"ReadonlyKeys":[
+								[0,1,[1.3,1.3]],
+								[10,1,[0.8,0.8]]
+							],
+							"TargetProperty":"Scale"
+						}
+					],
 					"Color":[4294967295],
 					"Id":"CitrusLogo",
 					"Pivot":[0.5,0.5],
-					"Position":[87.99866,182.66663],
-					"Scale":[0.8,0.8],
+					"Position":[403.3736,482.6612],
+					"Scale":[1.3,1.3],
 					"Size":[220,328],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
@@ -123,13 +143,32 @@
 				{
 					"class":"Lime.Image, Lime",
 					"Anchors":48,
+					"Animators":[
+						{
+							"class":"Lime.Vector2Animator, Lime",
+							"AnimationId":"Resolutions",
+							"ReadonlyKeys":[
+								[0,1,[397.65936,-27.360168]],
+								[10,1,[547.6653,186.92181]]
+							],
+							"TargetProperty":"Position"
+						},
+						{
+							"class":"Lime.Vector2Animator, Lime",
+							"AnimationId":"Resolutions",
+							"ReadonlyKeys":[
+								[0,1,[0.97196263,0.97196263]],
+								[10,1,[0.8,0.8]]
+							],
+							"TargetProperty":"Scale"
+						}
+					],
 					"Color":[4279024900],
 					"Id":"GameForest",
 					"Pivot":[0.5,0.5],
-					"Position":[547.6653,186.92181],
-					"Scale":[0.8,0.8],
+					"Position":[397.65936,-27.360168],
+					"Scale":[0.97196263,0.97196263],
 					"Size":[612,256],
-					"TangerineFlags":4,
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"Data/Splash/GameForest"
@@ -138,6 +177,17 @@
 				{
 					"class":"Lime.Image, Lime",
 					"Anchors":48,
+					"Animators":[
+						{
+							"class":"Lime.Animator`1[[System.Boolean]], Lime",
+							"AnimationId":"Resolutions",
+							"ReadonlyKeys":[
+								[9,0,false],
+								[10,0,true]
+							],
+							"TargetProperty":"Visible"
+						}
+					],
 					"Color":[4288124823],
 					"Id":"Separator",
 					"Pivot":[0.5,0.5],
@@ -146,7 +196,8 @@
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
 						"SerializationPath":"/Common/Masks/LineGradient"
-					}
+					},
+					"Visible":false
 				}
 			],
 			"Pivot":[0.5,0.5],
@@ -183,6 +234,8 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
 
 
 

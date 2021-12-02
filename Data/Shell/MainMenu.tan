@@ -101,7 +101,7 @@
 					"ContentsPath":"Externals/BtnPlay",
 					"Id":"BtnGo",
 					"Pivot":[0.5,0.5],
-					"Position":[517,493],
+					"Position":[384,927.66675],
 					"Size":[232,148],
 					"TangerineFlags":512
 				},
@@ -120,7 +120,7 @@
 					"ContentsPath":"Externals/BtnOptions",
 					"Id":"BtnOptions",
 					"Pivot":[0.5,0.5],
-					"Position":[729.03687,551.03674],
+					"Position":[617.03687,923.37],
 					"Size":[128,128]
 				},
 				{
@@ -142,30 +142,20 @@
 						}
 					],
 					"Font":{
-						"Name":"RussoOne"
+						"Name":"Labels"
 					},
-					"FontHeight":60,
+					"FontHeight":80,
 					"HAlignment":1,
 					"Id":"Title",
 					"OverflowMode":1,
-					"Pivot":[0.5,1],
-					"Position":[472.66647,178.79285],
-					"Rotation":-3.0702667,
-					"Size":[374,64],
-					"Text":"Match 3 Template",
+					"Pivot":[0.5,0.5000005],
+					"Position":[384,437.1974],
+					"Rotation":-5.522812,
+					"Size":[500,256],
+					"Spacing":36,
+					"Text":"Match\nZzz",
+					"TextColor":[4285964005],
 					"VAlignment":1
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Color":[4294967295],
-					"ContentsPath":"Externals/TitleBar",
-					"Id":"TitleBar",
-					"Pivot":[0.5,0.5],
-					"Position":[464.01935,148.27159],
-					"Rotation":-3.0702667,
-					"Scale":[0.85744077,0.85744077],
-					"Size":[512,128],
-					"TangerineFlags":1024
 				},
 				{
 					"class":"Lime.SimpleText, Lime",
@@ -186,63 +176,23 @@
 						}
 					],
 					"Font":{
-						"Name":"RobotoMed"
+						"Name":"Text"
 					},
 					"FontHeight":38.8,
 					"HAlignment":1,
 					"Id":"Text",
 					"OverflowMode":1,
 					"Pivot":[0.5,0.5],
-					"Position":[518.96234,311.96194],
-					"Size":[329.92465,180],
-					"Text":"Добро пожаловать\nв чудесный мир!",
-					"TextColor":[4287880191],
+					"Position":[402.66672,680.62866],
+					"Size":[548.89105,180],
+					"Text":"Убей всех Зомби!",
+					"TextColor":[4289984762],
 					"VAlignment":1
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Color":[4294967295],
-					"ContentsPath":"Externals/Win",
-					"Id":"Win",
-					"Pivot":[0.5,0.5],
-					"Position":[532,384],
-					"Rotation":-3.5308838,
-					"Scale":[1.154089,1.0313396],
-					"Size":[512,512],
-					"TangerineFlags":1792
 				}
 			],
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1024,768]
-		},
-		{
-			"class":"Lime.Image, Lime",
-			"Anchors":11,
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[0,0,[939524096]],
-						[5,0,[0]],
-						[10,0,[0]],
-						[11,0,[939524096]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[939524096],
-			"Id":"LineGradient",
-			"Pivot":[0.5,1],
-			"Position":[683,773],
-			"Size":[1366,560.38214],
-			"TangerineFlags":4,
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Common/Masks/LineGradient"
-			},
-			"UV1":[1,0.5]
+			"Position":[384,683],
+			"Size":[768,1366]
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -264,55 +214,22 @@
 			"Id":"Logos",
 			"Nodes":[
 				{
-					"class":"Lime.SimpleText, Lime",
-					"Anchors":9,
-					"Color":[3724541951],
-					"Components":[
-						{
-							"class":"Lime.SignedDistanceFieldComponent, Lime",
-							"Dilate":2,
-							"Gradient":[
-								{
-									"Color":[4294967295]
-								},
-								{
-									"Color":[4278190080],
-									"Position":1
-								}
-							]
-						}
-					],
-					"Font":{
-						"Name":"RussoOne"
-					},
-					"FontHeight":60,
-					"Id":"Name",
-					"OverflowMode":1,
-					"Pivot":[0,0.5],
-					"Position":[99.8331,58.459595],
-					"Size":[337,64],
-					"Text":"Имя и Фамилия Студента Тут",
-					"TextColor":[4292576057],
-					"VAlignment":1
-				},
-				{
 					"class":"Lime.Image, Lime",
-					"Anchors":9,
-					"Blending":3,
+					"Anchors":16,
 					"Color":[2868903935],
-					"Id":"FEFU",
+					"Id":"DarkBig",
 					"Pivot":[0.5,0.5],
-					"Position":[61.166626,52.166626],
-					"Scale":[0.64038336,0.64038336],
-					"Size":[68,128],
+					"Position":[489.78406,53],
+					"Scale":[0.32346013,0.32346013],
+					"Size":[250,250],
 					"Texture":{
 						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"Data/Splash/FEFU"
+						"SerializationPath":"Data/Splash/DarkBig"
 					}
 				},
 				{
 					"class":"Lime.Button, Lime",
-					"Anchors":10,
+					"Anchors":16,
 					"Animations":[
 						{
 							"IsLegacy":true,
@@ -375,7 +292,7 @@
 							"Color":[3170893823],
 							"Id":"GameForest",
 							"Pivot":[0.5000001,0.5000011],
-							"Position":[47.36664,48.99998],
+							"Position":[51.366264,48.99998],
 							"Scale":[0.6376132,0.6376132],
 							"Size":[128,114],
 							"TangerineFlags":4,
@@ -386,12 +303,12 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[1292.6997,52.000008],
+					"Position":[384,58.000008],
 					"Size":[102.73253,112]
 				},
 				{
 					"class":"Lime.Button, Lime",
-					"Anchors":10,
+					"Anchors":16,
 					"Animations":[
 						{
 							"IsLegacy":true,
@@ -454,7 +371,7 @@
 							"Color":[2868903935],
 							"Id":"CitrusLogo",
 							"Pivot":[0.5,0.49999952],
-							"Position":[55.933876,50.490715],
+							"Position":[51.366272,50.490715],
 							"Scale":[0.34875566,0.34875566],
 							"Size":[220,219.89764],
 							"TangerineFlags":4,
@@ -466,44 +383,75 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[1189.3662,52.000008],
+					"Position":[274.15027,58.000008],
 					"Size":[102.73253,112]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":11,
+					"Animators":[
+						{
+							"class":"Lime.Color4Animator, Lime",
+							"AnimationId":"Appear",
+							"ReadonlyKeys":[
+								[0,0,[939524096]],
+								[38,0,[939524096]],
+								[44,0,[0]]
+							],
+							"TargetProperty":"Color"
+						}
+					],
+					"Color":[939524096],
+					"Id":"LineGradient",
+					"Pivot":[0.5,1],
+					"Position":[384.00003,290.35767],
+					"Size":[807.5899,312.83264],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/LineGradient"
+					},
+					"UV1":[1,0.5]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":3,
+					"Color":[4278673056],
+					"Id":"WornedBar",
+					"Pivot":[0.5,0.5],
+					"Position":[336,73.833374],
+					"Rotation":3.452423,
+					"Scale":[1.7505044,1.7505044],
+					"Size":[688,125],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/UI/WornedBar"
+					}
 				}
 			],
 			"Pivot":[1,1],
-			"Position":[1366,768],
-			"Size":[1366,108]
+			"Position":[768,1366],
+			"Size":[768,149]
 		},
 		{
-			"class":"Lime.TiledImage, Lime",
-			"Anchors":15,
-			"Animators":[
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"AnimationId":"Appear",
-					"ReadonlyKeys":[
-						[0,0,[4294967295]],
-						[5,0,[16777215]],
-						[10,0,[16777215]],
-						[11,0,[4294967295]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
+			"class":"Lime.NineGrid, Lime",
+			"Anchors":48,
+			"BottomOffset":0.5,
 			"Color":[4294967295],
-			"Id":"Bg",
+			"Id":"Match3BG",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,978.0762],
+			"Size":[785,1968.1523],
+			"TangerineFlags":4,
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"Data/UI/Bg"
-			},
-			"TileSize":[256,512]
+				"SerializationPath":"/Game/Levels/Data/Match3BG"
+			}
 		}
 	],
-	"Size":[1366,768]
+	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

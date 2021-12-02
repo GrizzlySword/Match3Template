@@ -164,6 +164,7 @@
 	"Nodes":[
 		{
 			"class":"Lime.Frame, Lime",
+			"Anchors":48,
 			"Animators":[
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
@@ -187,8 +188,8 @@
 			"ContentsPath":"Externals/MSGCongratz",
 			"Id":"MSGCongratz",
 			"Pivot":[0.5,0.5],
-			"Position":[683,384],
-			"Size":[1366,768],
+			"Position":[384,893],
+			"Size":[768,768],
 			"TangerineFlags":1536,
 			"Visible":false
 		},
@@ -360,7 +361,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Text"
 							},
 							"FontHeight":44,
 							"Id":"LimitsValue",
@@ -445,7 +446,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RussoOne"
+								"Name":"Text"
 							},
 							"FontHeight":44,
 							"Id":"GoalsValue",
@@ -506,6 +507,8 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
 
 
 

@@ -71,7 +71,7 @@
 								}
 							],
 							"Font":{
-								"Name":"RobotoMed"
+								"Name":"Text"
 							},
 							"Id":"Default",
 							"Size":54,
@@ -138,6 +138,7 @@
 	],
 	"Size":[1024,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
