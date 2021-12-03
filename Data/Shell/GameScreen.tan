@@ -294,6 +294,43 @@
 		},
 		{
 			"class":"Lime.Frame, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Match3Template.Types.Match3ConfigComponent, Match3Template.Types",
+					"DelayBetweenLightningStrikes":0.01,
+					"OneCellFallTime":0.13,
+					"SwapBackOnNonMatchingSwap":true,
+					"WaitForAnimateDropDownFall":false,
+					"WaitForAnimateDropDownLand":false
+				}
+			],
+			"Id":"BoardContainer",
+			"Nodes":[
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":15,
+					"Color":[4294967295],
+					"Id":"Image",
+					"Pivot":[0.5,0.5],
+					"Position":[373,373],
+					"Size":[746,746],
+					"TangerineFlags":6,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Game/Match3/Board/Board"
+					},
+					"Visible":false
+				}
+			],
+			"Pivot":[0.5,0.5],
+			"Position":[384,975],
+			"Size":[746,746],
+			"TangerineFlags":512
+		},
+		{
+			"class":"Lime.Frame, Lime",
 			"Anchors":15,
 			"Color":[4294967295],
 			"Id":"Ui",
@@ -478,47 +515,11 @@
 			"Position":[384,683],
 			"Size":[768,1366],
 			"TangerineFlags":4
-		},
-		{
-			"class":"Lime.Frame, Lime",
-			"Anchors":48,
-			"Color":[4294967295],
-			"Components":[
-				{
-					"class":"Match3Template.Types.Match3ConfigComponent, Match3Template.Types",
-					"DelayBetweenLightningStrikes":0.01,
-					"OneCellFallTime":0.13,
-					"SwapBackOnNonMatchingSwap":true,
-					"WaitForAnimateDropDownFall":false,
-					"WaitForAnimateDropDownLand":false
-				}
-			],
-			"Id":"BoardContainer",
-			"Nodes":[
-				{
-					"class":"Lime.Image, Lime",
-					"Anchors":15,
-					"Color":[4294967295],
-					"Id":"Image",
-					"Pivot":[0.5,0.5],
-					"Position":[373,373],
-					"Size":[746,746],
-					"TangerineFlags":6,
-					"Texture":{
-						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"/Game/Match3/Board/Board"
-					},
-					"Visible":false
-				}
-			],
-			"Pivot":[0.5,0.5],
-			"Position":[384,975],
-			"Size":[746,746],
-			"TangerineFlags":512
 		}
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

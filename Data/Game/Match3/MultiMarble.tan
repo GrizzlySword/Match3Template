@@ -3,9 +3,6 @@
 	"Animations":[
 		{
 			"ApplyZeroPose":false,
-			"Id":"ZeroPose"
-		},
-		{
 			"Id":"Swap",
 			"Markers":[
 				{
@@ -102,7 +99,7 @@
 				},
 				{
 					"Action":1,
-					"Frame":23,
+					"Frame":21,
 					"Id":"",
 					"JumpTo":""
 				}
@@ -139,6 +136,7 @@
 			]
 		},
 		{
+			"ApplyZeroPose":false,
 			"Id":"Match",
 			"Markers":[
 				{
@@ -210,18 +208,6 @@
 		{
 			"class":"Lime.Viewport3D, Lime",
 			"Anchors":48,
-			"Animations":[
-				{
-					"IsLegacy":true,
-					"Markers":[
-						{
-							"Action":1,
-							"Id":"Start",
-							"JumpTo":""
-						}
-					]
-				}
-			],
 			"Animators":[
 				{
 					"class":"Lime.Animator`1[[System.Boolean]], Lime",
@@ -237,8 +223,8 @@
 					"AnimationId":"Match",
 					"ReadonlyKeys":[
 						[0,2,[45,45]],
-						[7,2,[45,40]],
-						[11,2,[45,254]]
+						[4,2,[45,40]],
+						[11,2,[45,209]]
 					],
 					"TargetProperty":"Position"
 				},
@@ -256,7 +242,7 @@
 					"AnimationId":"Match",
 					"ReadonlyKeys":[
 						[0,2,[0.64,0.64]],
-						[7,2,[0.84160125,0.84160125]],
+						[4,2,[0.84160125,0.84160125]],
 						[11,0,[0.4602507,0.4602507]]
 					],
 					"TargetProperty":"Scale"
@@ -290,17 +276,8 @@
 						[10,2,[0.5925923,0.7503436]],
 						[13,2,[0.7125221,0.62018317]],
 						[16,2,[0.62664926,0.6890916]],
-						[19,2,[0.67887056,0.5937925]],
-						[21,2,[0.73052424,0.54247785]],
-						[23,2,[0.64,0.64]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,2,[0.64,0.64]]
+						[18,2,[0.67887056,0.5937925]],
+						[21,2,[0.64,0.64]]
 					],
 					"TargetProperty":"Scale"
 				},
@@ -311,40 +288,10 @@
 						[10,2,[45,45]],
 						[13,2,[45,57]],
 						[16,2,[45,42]],
-						[19,2,[44.999996,45]],
-						[21,2,[45,53]],
-						[23,2,[44.999996,45]]
+						[18,2,[44.999996,45]],
+						[21,2,[44.999996,45]]
 					],
 					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[0,0,[45,45]]
-					],
-					"TargetProperty":"Position"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"ZeroPose",
-					"ReadonlyKeys":[
-						[10,0,0]
-					],
-					"TargetProperty":"Rotation"
-				},
-				{
-					"class":"Lime.NumericAnimator, Lime",
-					"AnimationId":"Swap",
-					"ReadonlyKeys":[
-						[10,0,0],
-						[20,0,180],
-						[30,0,360],
-						[40,0,0],
-						[50,0,-180],
-						[60,0,-360]
-					],
-					"TargetProperty":"Rotation"
 				}
 			],
 			"CameraRef":{
@@ -366,17 +313,18 @@
 						},
 						{
 							"class":"Lime.Animator`1[[System.String]], Lime",
-							"AnimationId":"ZeroPose",
+							"AnimationId":"Show",
 							"ReadonlyKeys":[
-								[0,0,"Still@Take 001"]
+								[6,0,"Still@Take 001"]
 							],
 							"TargetProperty":"Trigger"
 						},
 						{
 							"class":"Lime.Animator`1[[System.String]], Lime",
-							"AnimationId":"Show",
+							"AnimationId":"Swap",
 							"ReadonlyKeys":[
-								[0,0,"Still@Take 001"]
+								[10,0,"SwapStart@Take 001"],
+								[40,0,"SwapBack@Take 001"]
 							],
 							"TargetProperty":"Trigger"
 						}
@@ -396,22 +344,275 @@
 					"ProjectionMode":0,
 					"Rotation":[0.7071068,0,2.9802322E-8,0.7071067],
 					"Scale":[1,1,0.01]
-				},
-				{
-					"class":"Lime.Camera3D, Lime",
-					"AspectRatio":1,
-					"FarClipPlane":1E4,
-					"FieldOfView":0.7853982,
-					"Id":"Cam",
-					"NearClipPlane":0.001,
-					"OrthographicSize":1,
-					"Position":[0,0,1.9571816]
 				}
 			],
 			"Pivot":[0.5,0.5],
 			"Position":[45,45],
 			"Scale":[0.64,0.64],
 			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Viewport3D, Lime",
+			"Anchors":48,
+			"Animations":[
+				{
+					"IsLegacy":true,
+					"Markers":[
+						{
+							"Action":1,
+							"Id":"Start",
+							"JumpTo":""
+						}
+					]
+				}
+			],
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"AnimationId":"Kind",
+					"ReadonlyKeys":[
+						[0,0,false],
+						[1,0,true],
+						[2,0,false]
+					],
+					"TargetProperty":"Visible"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Match",
+					"ReadonlyKeys":[
+						[0,2,[45,45]],
+						[4,2,[45,40]],
+						[11,2,[45,174]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Match",
+					"ReadonlyKeys":[
+						[10,0,[4294967295]],
+						[11,0,[16777215]]
+					],
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Match",
+					"ReadonlyKeys":[
+						[0,2,[0.64,0.64]],
+						[4,2,[1.0218086,1.0218086]],
+						[11,0,[0.4602507,0.4602507]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Show",
+					"ReadonlyKeys":[
+						[0,0,[16777215]],
+						[2,0,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Show",
+					"ReadonlyKeys":[
+						[0,2,[44.999996,-30.5]],
+						[2,2,[44.999996,-50.5]],
+						[4,2,[44.999996,45]],
+						[6,2,[44.999996,45]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[0,2,[0.64,0.64]],
+						[3,2,[0.5925923,0.7503436]],
+						[10,2,[0.5925923,0.7503436]],
+						[13,2,[0.7125221,0.62018317]],
+						[16,2,[0.62664926,0.6890916]],
+						[18,2,[0.67887056,0.5937925]],
+						[21,2,[0.64,0.64]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"DropDown",
+					"ReadonlyKeys":[
+						[10,2,[45,45]],
+						[13,2,[45,57]],
+						[16,2,[45,42]],
+						[18,2,[44.999996,45]],
+						[21,2,[44.999996,45]]
+					],
+					"TargetProperty":"Position"
+				}
+			],
+			"CameraRef":{
+				"Id":"CamOrtho"
+			},
+			"Color":[4294967295],
+			"Id":"02",
+			"Nodes":[
+				{
+					"class":"Lime.Model3D, Lime",
+					"Animators":[
+						{
+							"class":"Lime.Animator`1[[System.String]], Lime",
+							"AnimationId":"Show",
+							"ReadonlyKeys":[
+								[6,0,"IdleStart@Animation"]
+							],
+							"TargetProperty":"Trigger"
+						},
+						{
+							"class":"Lime.Animator`1[[System.String]], Lime",
+							"AnimationId":"Match",
+							"ReadonlyKeys":[
+								[0,0,"FlipStart@Animation"]
+							],
+							"TargetProperty":"Trigger"
+						},
+						{
+							"class":"Lime.Animator`1[[System.String]], Lime",
+							"AnimationId":"Swap",
+							"ReadonlyKeys":[
+								[10,0,"SwapStart@Animation"],
+								[40,0,"SwapBack@Animation"]
+							],
+							"TargetProperty":"Trigger"
+						}
+					],
+					"ContentsPath":"Items/02WaterBottle",
+					"Id":"Model3D"
+				},
+				{
+					"class":"Lime.Camera3D, Lime",
+					"AspectRatio":1,
+					"FarClipPlane":1E4,
+					"FieldOfView":14,
+					"Id":"CamOrtho",
+					"NearClipPlane":0.1,
+					"OrthographicSize":1,
+					"Position":[0,-3.9,0],
+					"ProjectionMode":0,
+					"Rotation":[0.7071068,0,2.9802322E-8,0.7071067],
+					"Scale":[1,1,0.01]
+				}
+			],
+			"Pivot":[0.5,0.5],
+			"Position":[45,45],
+			"Scale":[0.64,0.64],
+			"Size":[90,90],
+			"Visible":false
+		},
+		{
+			"class":"Lime.ParticleEmitter, Lime",
+			"AlongPathOrientation":true,
+			"Animations":[
+				{
+					"IsLegacy":true
+				}
+			],
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.Boolean]], Lime",
+					"AnimationId":"Kind",
+					"ReadonlyKeys":[
+						[0,0,false],
+						[1,0,true],
+						[2,0,false]
+					],
+					"TargetProperty":"Visible"
+				},
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"AnimationId":"Match",
+					"ReadonlyKeys":[
+						[0,2,[45.523262,47.39779]],
+						[6,2,[45,70]]
+					],
+					"TargetProperty":"Position"
+				},
+				{
+					"class":"Lime.NumericAnimator, Lime",
+					"AnimationId":"Match",
+					"ReadonlyKeys":[
+						[1,1,0],
+						[2,1,100],
+						[6,1,0]
+					],
+					"TargetProperty":"Number"
+				}
+			],
+			"Color":[4294967295],
+			"GravityAmount":{
+				"Dispersion":52.7,
+				"Median":201.40001
+			},
+			"Id":"02WaterDrops",
+			"Lifetime":{
+				"Dispersion":0.1,
+				"Median":0.70000005
+			},
+			"Nodes":[
+				{
+					"class":"Lime.ParticleModifier, Lime",
+					"Animators":[
+						{
+							"class":"Lime.Color4Animator, Lime",
+							"ReadonlyKeys":[
+								[0,0,[16777215]],
+								[4,0,[4294967295]],
+								[29,0,[4294967295]],
+								[34,0,[16777215]]
+							],
+							"TargetProperty":"Color"
+						},
+						{
+							"class":"Lime.Vector2Animator, Lime",
+							"ReadonlyKeys":[
+								[0,0,[0.4,0.4]],
+								[4,0,[1,1]],
+								[34,0,[0.2,0.2]]
+							],
+							"TargetProperty":"Scale"
+						}
+					],
+					"Color":[16777215],
+					"Id":"ParticleModifier",
+					"Scale":[0.4,0.4],
+					"Size":[128,128],
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Particles/WaterDropBig"
+					}
+				}
+			],
+			"Number":0,
+			"Orientation":{
+				"Dispersion":28.5
+			},
+			"ParticlesLinkage":0,
+			"Pivot":[0.5,0.5],
+			"Position":[45.523262,47.39779],
+			"Size":[65.63516,73.18564],
+			"Speed":2.2,
+			"TimeShift":2.1000001,
+			"Velocity":{
+				"Dispersion":14.5,
+				"Median":119.399994
+			},
+			"Visible":false,
+			"Zoom":{
+				"Dispersion":0.03,
+				"Median":0.3
+			}
 		},
 		{
 			"class":"Lime.Image, Lime",
@@ -491,9 +692,8 @@
 						[10,2,[0.8656715,1.0898876]],
 						[13,2,[1.0746272,0.77426946]],
 						[16,2,[0.8582591,1.0103356]],
-						[19,2,[1,1]],
-						[21,2,[0.96050745,0.77426946]],
-						[23,2,[1,1]]
+						[18,2,[1,1]],
+						[21,2,[1,1]]
 					],
 					"TargetProperty":"Scale"
 				},
@@ -515,9 +715,8 @@
 						[10,2,[45,45]],
 						[13,2,[45,57]],
 						[16,2,[45,42]],
-						[19,2,[44.999996,45]],
-						[21,2,[45,53]],
-						[23,2,[44.999996,45]]
+						[18,2,[44.999996,45]],
+						[21,2,[44.999996,45]]
 					],
 					"TargetProperty":"Position"
 				},
@@ -717,7 +916,8 @@
 					"AnimationId":"Kind",
 					"ReadonlyKeys":[
 						[0,0,false],
-						[1,0,true]
+						[1,0,false],
+						[2,0,true]
 					],
 					"TargetProperty":"Visible"
 				}
@@ -737,6 +937,13 @@
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
+
+
+
+
+
 
 
 

@@ -151,10 +151,11 @@
 			"Components":[
 				{
 					"class":"Match3Template.Types.BoardConfigComponent, Match3Template.Types",
-					"ColumnCount":8,
+					"ColumnCount":7,
 					"DropCount":3,
 					"LevelFileName":"Game/Levels/GameLevel3",
 					"PreFillBoard":false,
+					"RowCount":7,
 					"TurnCount":48
 				},
 				{
