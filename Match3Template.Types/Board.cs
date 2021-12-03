@@ -252,6 +252,10 @@ namespace Match3Template.Types
 					}
 				}
 
+				if (!boardConfig.AllowedPieces.Any()) {
+					boardConfig.AllowedPieces.AddRange(new [] { 0, 1, 2, 3, 4 });
+				}
+
 				if (boardConfig.AllowedPieces.Any()) {
 					int pieceCount = boardConfig.ColumnCount * boardConfig.RowCount;
 					for (int i = 0; i < pieceCount; i++) {
@@ -303,6 +307,9 @@ namespace Match3Template.Types
 
 		private void SpawnItems()
 		{
+			if (!boardConfig.AllowedPieces.Any()) {
+				boardConfig.AllowedPieces.AddRange(items.OfType<Piece>().Select(p => p.Kind).Distinct());
+			}
 			for (int i = 0; i < boardConfig.ColumnCount; i++) {
 				var gridPosition = new IntVector2(i, 0);
 				if (grid[gridPosition] == null) {
@@ -550,6 +557,7 @@ namespace Match3Template.Types
 			);
 			if (!TryGetProjectionAxis(touchDelta, out var projectionAxis)) {
 				if (item is Bonus bonus) {
+					TurnMade?.Invoke(this, new TurnMadeEventArgs());
 					yield return BlowTask(item, DamageKind.Match);
 				}
 				yield break;
@@ -589,6 +597,7 @@ namespace Match3Template.Types
 				item.ApplyAnimationPercent(projectionAmount / match3Config.CellSize, "Swap", "Forward");
 				yield return null;
 			}
+			bool turnMade = false;
 			item.AnimateUnselect();
 			var timeRatioPassed = projectionAmount / match3Config.CellSize;
 			var timeRatioLeft = 1.0f - timeRatioPassed;
@@ -600,7 +609,12 @@ namespace Match3Template.Types
 				item.SwapIndex = swapIndex;
 				nextItem.SwapIndex = swapIndex;
 				swapIndex++;
-				if (match3Config.SwapBackOnNonMatchingSwap) {
+				if (item is Bonus bonus) {
+					TurnMade?.Invoke(this, new TurnMadeEventArgs());
+					syncFinished = true;
+					yield return BlowTask(item, DamageKind.Match);
+					yield break;
+				} else if (match3Config.SwapBackOnNonMatchingSwap) {
 					bool success = false;
 					var matches = FindMatches();
 					foreach (var match in matches) {
@@ -622,11 +636,14 @@ namespace Match3Template.Types
 						yield return item.MoveTo(item.GridPosition, match3Config.SwapTime, (t) => {
 							item.ApplyAnimationPercent(t, "Swap", "Backward");
 						});
+					} else {
+						turnMade = true;
 					}
 				} else {
 					yield return item.MoveTo(item.GridPosition, match3Config.SwapTime * timeRatioLeft, (t) => {
 						item.ApplyAnimationPercent(timeRatioPassed + t * timeRatioLeft, "Swap", "Forward");
 					});
+					turnMade = true;
 				}
 			} else {
 				yield return item.MoveTo(item.GridPosition, match3Config.SwapTime * timeRatioPassed, (t) => {
@@ -634,6 +651,9 @@ namespace Match3Template.Types
 				});
 			}
 			syncFinished = true;
+			if (turnMade) {
+				TurnMade?.Invoke(this, new TurnMadeEventArgs());
+			}
 
 			bool TryGetProjectionAxis(Vector2 touchDelta, out IntVector2 projectionAxis)
 			{
