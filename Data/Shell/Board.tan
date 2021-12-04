@@ -329,7 +329,7 @@
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
 					"ReadonlyKeys":[
-						[0,0,"Shown@Show"]
+						[0,0,"Start@Idle,Shown@Show"]
 					],
 					"TargetProperty":"Trigger"
 				}
@@ -348,7 +348,7 @@
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
 					"ReadonlyKeys":[
-						[0,0,"Shown@Show"]
+						[0,0,"Start@Idle,Shown@Show"]
 					],
 					"TargetProperty":"Trigger"
 				}
@@ -367,7 +367,7 @@
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
 					"ReadonlyKeys":[
-						[0,0,"Shown@Show"]
+						[0,0,"Start@Idle,Shown@Show"]
 					],
 					"TargetProperty":"Trigger"
 				}
@@ -398,6 +398,78 @@
 			"Position":[241.5,323.5333],
 			"Size":[90,90],
 			"TangerineFlags":1536
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.String]], Lime",
+					"ReadonlyKeys":[
+						[0,0,"05@Kind,Shown@Show,None@Selection"]
+					],
+					"TargetProperty":"Trigger"
+				}
+			],
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/MultiMarble",
+			"Id":"MultiMarble",
+			"Pivot":[0.5,0.5],
+			"Position":[665.6666,109],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.String]], Lime",
+					"ReadonlyKeys":[
+						[0,0,"04@Kind,Shown@Show,None@Selection"]
+					],
+					"TargetProperty":"Trigger"
+				}
+			],
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/MultiMarble",
+			"Id":"MultiMarble",
+			"Pivot":[0.5,0.5],
+			"Position":[559.75,109],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.String]], Lime",
+					"ReadonlyKeys":[
+						[0,0,"03@Kind,Shown@Show,None@Selection"]
+					],
+					"TargetProperty":"Trigger"
+				}
+			],
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/MultiMarble",
+			"Id":"MultiMarble",
+			"Pivot":[0.5,0.5],
+			"Position":[453.8333,109],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Animator`1[[System.String]], Lime",
+					"ReadonlyKeys":[
+						[0,0,"02@Kind,Shown@Show,None@Selection"]
+					],
+					"TargetProperty":"Trigger"
+				}
+			],
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/MultiMarble",
+			"Id":"MultiMarble",
+			"Pivot":[0.5,0.5],
+			"Position":[347.91666,109],
+			"Size":[90,90]
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -458,6 +530,7 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

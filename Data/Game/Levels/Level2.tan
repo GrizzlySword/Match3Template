@@ -151,6 +151,11 @@
 			"Components":[
 				{
 					"class":"Match3Template.Types.BoardConfigComponent, Match3Template.Types",
+					"AllowedPieces":[
+						0,
+						1,
+						2
+					],
 					"BlockerCount":6,
 					"ColumnCount":6,
 					"DropCount":3,
