@@ -27,25 +27,25 @@
 			"Markers":[
 				{
 					"Action":1,
-					"Id":"@Landscape",
-					"JumpTo":""
-				},
-				{
-					"Action":1,
-					"Frame":10,
 					"Id":"@Portrait",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
+					"Frame":10,
+					"Id":"@TabletPortrait",
+					"JumpTo":""
+				},
+				{
+					"Action":1,
 					"Frame":20,
-					"Id":"@TabletLandscape",
+					"Id":"@Landscape",
 					"JumpTo":""
 				},
 				{
 					"Action":1,
 					"Frame":30,
-					"Id":"@TabletPortrait",
+					"Id":"@TabletLandscape",
 					"JumpTo":""
 				}
 			]
@@ -57,6 +57,39 @@
 	"Color":[4294967295],
 	"Nodes":[
 		{
+			"class":"Lime.SimpleText, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Components":[
+				{
+					"class":"Lime.SignedDistanceFieldComponent, Lime",
+					"Dilate":2,
+					"Gradient":[
+						{
+							"Color":[4294967295]
+						},
+						{
+							"Color":[4278190080],
+							"Position":1
+						}
+					]
+				}
+			],
+			"Font":{
+				"Name":"Labels"
+			},
+			"FontHeight":60,
+			"HAlignment":1,
+			"Id":"Title",
+			"OverflowMode":1,
+			"Pivot":[0.5,1],
+			"Position":[386.85547,202.62384],
+			"Size":[700,102],
+			"Text":"Настройки",
+			"TextColor":[4287086576],
+			"VAlignment":1
+		},
+		{
 			"class":"Lime.Frame, Lime",
 			"Anchors":48,
 			"Animators":[
@@ -64,8 +97,8 @@
 					"class":"Lime.Vector2Animator, Lime",
 					"AnimationId":"Resolutions",
 					"ReadonlyKeys":[
-						[19,1,[1,1]],
-						[20,1,[0.8,0.8]]
+						[0,1,[1,1]],
+						[10,1,[0.8,0.8]]
 					],
 					"TargetProperty":"Scale"
 				},
@@ -141,7 +174,7 @@
 						{
 							"class":"Lime.SimpleText, Lime",
 							"Anchors":15,
-							"Color":[4294967295],
+							"Color":[4287880191],
 							"Components":[
 								{
 									"class":"Lime.SignedDistanceFieldComponent, Lime",
@@ -158,40 +191,23 @@
 								}
 							],
 							"Font":{
-								"Name":"Labels"
+								"Name":"Text"
 							},
-							"FontHeight":60,
+							"FontHeight":56,
 							"HAlignment":1,
 							"Id":"Caption",
 							"OverflowMode":1,
 							"Pivot":[0.49999973,0.5],
 							"Position":[106.25729,49.81532],
-							"Size":[155.59576,66.63064],
+							"Size":[200,80],
 							"Spacing":-10.2,
 							"Text":"Язык",
 							"VAlignment":1
-						},
-						{
-							"class":"Lime.NineGrid, Lime",
-							"Anchors":15,
-							"BottomOffset":0.5,
-							"Color":[4294967295],
-							"Id":"Btn",
-							"LeftOffset":0.5,
-							"Pivot":[0.5,0.5],
-							"Position":[103.98164,49.81532],
-							"RightOffset":0.5,
-							"Size":[207.96329,99.63064],
-							"Texture":{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Data/UI/BtnDis"
-							},
-							"TopOffset":0.5
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[71.30313,387.35617],
-					"Rotation":-18.587387,
+					"Position":[386,882.0229],
+					"Rotation":-2.2064056,
 					"Size":[207.96329,99.63064]
 				},
 				{
@@ -250,8 +266,8 @@
 					"Nodes":[
 						{
 							"class":"Lime.SimpleText, Lime",
-							"Anchors":15,
-							"Color":[4294967295],
+							"Anchors":48,
+							"Color":[4287880191],
 							"Components":[
 								{
 									"class":"Lime.SignedDistanceFieldComponent, Lime",
@@ -268,41 +284,23 @@
 								}
 							],
 							"Font":{
-								"Name":"Labels"
+								"Name":"Text"
 							},
-							"FontHeight":60,
+							"FontHeight":75.6,
 							"HAlignment":1,
 							"Id":"Caption",
 							"OverflowMode":1,
 							"Pivot":[0.49999973,0.5],
-							"Position":[165.74539,64],
-							"Size":[274.57202,95],
+							"Position":[53.28597,47.5],
+							"Size":[106.57199,95],
 							"Spacing":-10.2,
-							"Text":"Помощь",
+							"Text":"?",
 							"VAlignment":1
-						},
-						{
-							"class":"Lime.NineGrid, Lime",
-							"Anchors":15,
-							"BottomOffset":0.5,
-							"Color":[4294967295],
-							"Id":"Btn",
-							"LeftOffset":0.5,
-							"Pivot":[0.5,0.5],
-							"Position":[163.46977,64],
-							"RightOffset":0.5,
-							"Size":[326.93954,128],
-							"Texture":{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Data/UI/BtnRed"
-							},
-							"TopOffset":0.5
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[650.9067,105.16431],
-					"Rotation":5.98085,
-					"Size":[326.93954,128]
+					"Position":[148.1581,888],
+					"Size":[106.57199,95]
 				},
 				{
 					"class":"Lime.Button, Lime",
@@ -359,60 +357,23 @@
 					"Id":"BtnCredits",
 					"Nodes":[
 						{
-							"class":"Lime.SimpleText, Lime",
-							"Anchors":15,
-							"Color":[4294967295],
-							"Components":[
-								{
-									"class":"Lime.SignedDistanceFieldComponent, Lime",
-									"Dilate":2,
-									"Gradient":[
-										{
-											"Color":[4294967295]
-										},
-										{
-											"Color":[4278190080],
-											"Position":1
-										}
-									]
-								}
-							],
-							"Font":{
-								"Name":"Labels"
-							},
-							"FontHeight":60,
-							"HAlignment":1,
-							"Id":"Caption",
-							"OverflowMode":1,
-							"Pivot":[0.49999973,0.5],
-							"Position":[165.74539,64],
-							"Size":[274.57202,95],
-							"Spacing":-10.2,
-							"Text":"Авторы",
-							"VAlignment":1
-						},
-						{
-							"class":"Lime.NineGrid, Lime",
-							"Anchors":15,
-							"BottomOffset":0.5,
-							"Color":[4294967295],
-							"Id":"Btn",
-							"LeftOffset":0.5,
+							"class":"Lime.Image, Lime",
+							"Anchors":16,
+							"Color":[2868903935],
+							"Id":"DarkBig",
 							"Pivot":[0.5,0.5],
-							"Position":[163.46977,64],
-							"RightOffset":0.5,
-							"Size":[326.93954,128],
+							"Position":[40.4339,40.432465],
+							"Scale":[0.32346013,0.32346013],
+							"Size":[250,250],
 							"Texture":{
 								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"Data/UI/BtnRed"
-							},
-							"TopOffset":0.5
+								"SerializationPath":"Data/Splash/DarkBig"
+							}
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[185.90668,617.1643],
-					"Rotation":22.314713,
-					"Size":[326.93954,128]
+					"Position":[630.69495,865.99994],
+					"Size":[80.865875,80.86493]
 				},
 				{
 					"class":"Lime.Button, Lime",
@@ -470,11 +431,11 @@
 					"Nodes":[
 						{
 							"class":"Lime.Image, Lime",
-							"Anchors":33,
-							"Color":[4287978023],
+							"Anchors":48,
+							"Color":[4285504745],
 							"Id":"WinBiege",
 							"Pivot":[0.5,0.5],
-							"Position":[64.95178,62.835693],
+							"Position":[76.95201,76.83569],
 							"Shader":3,
 							"Size":[105,105],
 							"Texture":{
@@ -484,8 +445,8 @@
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
-							"Anchors":15,
-							"Color":[4294967295],
+							"Anchors":48,
+							"Color":[4287880191],
 							"Components":[
 								{
 									"class":"Lime.SignedDistanceFieldComponent, Lime",
@@ -508,23 +469,24 @@
 							"Id":"Caption",
 							"OverflowMode":1,
 							"Pivot":[0,0.5],
-							"Position":[134.50012,64],
-							"Size":[168.5322,95],
-							"Spacing":-10.2,
-							"Text":"Connect to FB",
+							"Position":[146.93457,75.66649],
+							"Size":[218.92287,112.332985],
+							"Spacing":6.3,
+							"Text":"Сохранить прогресс",
 							"VAlignment":1
 						},
 						{
 							"class":"Lime.NineGrid, Lime",
-							"Anchors":15,
+							"Anchors":48,
 							"BottomOffset":0.5,
-							"Color":[4294967295],
+							"Color":[4282723660],
 							"Id":"Btn",
 							"LeftOffset":0.5,
 							"Pivot":[0.5,0.5],
-							"Position":[163.46977,64],
+							"Position":[195.47,73],
 							"RightOffset":0.5,
-							"Size":[326.93954,128],
+							"Shader":3,
+							"Size":[414.94,159],
 							"Texture":{
 								"class":"Lime.SerializableTexture, Lime",
 								"SerializationPath":"Data/UI/WinBlue"
@@ -533,19 +495,9 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[588.9067,344.1643],
-					"Rotation":-17.612335,
-					"Size":[326.93954,128]
-				},
-				{
-					"class":"Lime.Button, Lime",
-					"Anchors":48,
-					"Color":[4294967295],
-					"ContentsPath":"Externals/BtnOk",
-					"Id":"BtnOk",
-					"Pivot":[0.5,0.5],
-					"Position":[557,566.1643],
-					"Size":[128,128]
+					"Position":[384,378.1643],
+					"Rotation":0.43107605,
+					"Size":[390.94,146]
 				},
 				{
 					"class":"Lime.Frame, Lime",
@@ -588,12 +540,12 @@
 										{
 											"class":"Lime.Color4Animator, Lime",
 											"ReadonlyKeys":[
-												[0,0,[0]],
-												[6,0,[4278190080]],
-												[10,0,[4278190080]],
-												[40,0,[4278190080]],
-												[46,0,[4278190080]],
-												[50,0,[0]]
+												[0,0,[4533580]],
+												[6,0,[4282723660]],
+												[10,0,[4282723660]],
+												[40,0,[4282723660]],
+												[46,0,[4282723660]],
+												[50,0,[4533580]]
 											],
 											"TargetProperty":"Color"
 										},
@@ -610,47 +562,22 @@
 											"TargetProperty":"Scale"
 										}
 									],
-									"Color":[0],
+									"Color":[4533580],
 									"Id":"BulletCheck",
 									"Pivot":[0.40171,0.66091],
-									"Position":[21.162865,25.447626],
+									"Position":[18.891685,26.583185],
 									"Scale":[0.32236573,0.32236573],
 									"Size":[65,54],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
 										"SerializationPath":"Data/UI/IcoCheck"
 									}
-								},
-								{
-									"class":"Lime.Image, Lime",
-									"Animators":[
-										{
-											"class":"Lime.Vector2Animator, Lime",
-											"ReadonlyKeys":[
-												[0,0,[0,0]],
-												[1,0,[0.5908704,0.5908704]],
-												[40,0,[0.5908704,0.5908704]],
-												[41,0,[0,0]]
-											],
-											"TargetProperty":"Scale"
-										}
-									],
-									"Color":[4294967295],
-									"Id":"BtnOrange",
-									"Pivot":[0.5,0.5],
-									"Position":[24.831238,20.144005],
-									"Scale":[0,0],
-									"Size":[105,105],
-									"Texture":{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/BtnOrange"
-									}
 								}
 							],
 							"Pivot":[0.5,0.5],
 							"Position":[29.21643,32.21643],
-							"Scale":[0.8806,0.8806],
-							"Size":[47.3913,47.10146]
+							"Size":[47.3913,47.10146],
+							"TangerineFlags":4
 						},
 						{
 							"class":"Lime.Button, Lime",
@@ -707,39 +634,34 @@
 							"Id":"BtnCheck",
 							"Nodes":[
 								{
-									"class":"Lime.NineGrid, Lime",
+									"class":"Lime.Image, Lime",
 									"Animators":[
 										{
 											"class":"Lime.Vector2Animator, Lime",
 											"ReadonlyKeys":[
-												[38,0,[1.12371,1.12371]],
-												[40,0,[0.98909,0.82834]],
-												[42,0,[0.98909,0.82834]],
-												[46,0,[1.12371,1.12371]]
+												[38,2,[0.27218452,0.27218452]],
+												[40,2,[0.341913,0.341913]],
+												[42,2,[0.341913,0.341913]],
+												[46,2,[0.27218452,0.27218452]]
 											],
 											"TargetProperty":"Scale"
 										}
 									],
-									"BottomOffset":0.4,
-									"Color":[4288256409],
-									"Id":"NineGrid2",
-									"LeftOffset":0.4,
+									"Color":[4285504745],
+									"Id":"Shock1",
 									"Pivot":[0.5,0.5],
-									"Position":[29.21646,29.21646],
-									"RightOffset":0.4,
-									"Rotation":-180,
-									"Scale":[1.12371,1.12371],
-									"Size":[52,52],
+									"Position":[27.161728,28.333374],
+									"Scale":[0.27218452,0.27218452],
+									"Size":[294,300],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/WinGrey"
-									},
-									"TopOffset":0.4
+										"SerializationPath":"/Common/Masks/Shock1"
+									}
 								}
 							],
-							"Pivot":[0.5,0.5],
-							"Position":[136.49506,29],
-							"Size":[270.9901,58]
+							"Pivot":[0,0.5],
+							"Position":[1,29],
+							"Size":[390,58]
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
@@ -765,7 +687,7 @@
 							"Id":"Text",
 							"Pivot":[0,0.5],
 							"Position":[76,29],
-							"Size":[197.33325,55],
+							"Size":[319.33322,55],
 							"Spacing":-14,
 							"Text":"Музыка",
 							"TextColor":[4287880191],
@@ -773,8 +695,7 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[222.29953,276.45117],
-					"Rotation":-4.2667847,
+					"Position":[259.29953,526.4512],
 					"Size":[58.43292,58.43292]
 				},
 				{
@@ -818,12 +739,12 @@
 										{
 											"class":"Lime.Color4Animator, Lime",
 											"ReadonlyKeys":[
-												[0,0,[0]],
-												[6,0,[4278190080]],
-												[10,0,[4278190080]],
-												[40,0,[4278190080]],
-												[46,0,[4278190080]],
-												[50,0,[0]]
+												[0,0,[4533580]],
+												[6,0,[4282723660]],
+												[10,0,[4282723660]],
+												[40,0,[4282723660]],
+												[46,0,[4282723660]],
+												[50,0,[4533580]]
 											],
 											"TargetProperty":"Color"
 										},
@@ -840,47 +761,22 @@
 											"TargetProperty":"Scale"
 										}
 									],
-									"Color":[0],
+									"Color":[4533580],
 									"Id":"BulletCheck",
 									"Pivot":[0.40171,0.66091],
-									"Position":[21.162865,25.447626],
+									"Position":[18.891685,26.583185],
 									"Scale":[0.32236573,0.32236573],
 									"Size":[65,54],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
 										"SerializationPath":"Data/UI/IcoCheck"
 									}
-								},
-								{
-									"class":"Lime.Image, Lime",
-									"Animators":[
-										{
-											"class":"Lime.Vector2Animator, Lime",
-											"ReadonlyKeys":[
-												[0,0,[0,0]],
-												[1,0,[0.5908704,0.5908704]],
-												[40,0,[0.5908704,0.5908704]],
-												[41,0,[0,0]]
-											],
-											"TargetProperty":"Scale"
-										}
-									],
-									"Color":[4294967295],
-									"Id":"BtnOrange",
-									"Pivot":[0.5,0.5],
-									"Position":[24.831238,20.144005],
-									"Scale":[0,0],
-									"Size":[105,105],
-									"Texture":{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/BtnOrange"
-									}
 								}
 							],
 							"Pivot":[0.5,0.5],
 							"Position":[29.21643,32.21643],
-							"Scale":[0.8806,0.8806],
-							"Size":[47.3913,47.10146]
+							"Size":[47.3913,47.10146],
+							"TangerineFlags":4
 						},
 						{
 							"class":"Lime.Button, Lime",
@@ -937,39 +833,34 @@
 							"Id":"BtnCheck",
 							"Nodes":[
 								{
-									"class":"Lime.NineGrid, Lime",
+									"class":"Lime.Image, Lime",
 									"Animators":[
 										{
 											"class":"Lime.Vector2Animator, Lime",
 											"ReadonlyKeys":[
-												[38,0,[1.12371,1.12371]],
-												[40,0,[0.98909,0.82834]],
-												[42,0,[0.98909,0.82834]],
-												[46,0,[1.12371,1.12371]]
+												[38,2,[0.27218452,0.27218452]],
+												[40,2,[0.341913,0.341913]],
+												[42,2,[0.341913,0.341913]],
+												[46,2,[0.27218452,0.27218452]]
 											],
 											"TargetProperty":"Scale"
 										}
 									],
-									"BottomOffset":0.4,
-									"Color":[4288256409],
-									"Id":"NineGrid2",
-									"LeftOffset":0.4,
+									"Color":[4285504745],
+									"Id":"Shock1",
 									"Pivot":[0.5,0.5],
-									"Position":[29.21646,29.21646],
-									"RightOffset":0.4,
-									"Rotation":-180,
-									"Scale":[1.12371,1.12371],
-									"Size":[52,52],
+									"Position":[27.161728,28.333374],
+									"Scale":[0.27218452,0.27218452],
+									"Size":[294,300],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/WinGrey"
-									},
-									"TopOffset":0.4
+										"SerializationPath":"/Common/Masks/Shock1"
+									}
 								}
 							],
-							"Pivot":[0.5,0.5],
-							"Position":[136.49506,29],
-							"Size":[270.9901,58]
+							"Pivot":[0,0.5],
+							"Position":[1,29],
+							"Size":[390,58]
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
@@ -995,7 +886,7 @@
 							"Id":"Text",
 							"Pivot":[0,0.5],
 							"Position":[76,29],
-							"Size":[197.33325,55],
+							"Size":[317.24866,55],
 							"Spacing":-14,
 							"Text":"Звуки",
 							"TextColor":[4287880191],
@@ -1003,8 +894,7 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[227.43317,345.2599],
-					"Rotation":-4.2667847,
+					"Position":[259.29953,622.7256],
 					"Size":[58.43292,58.43292]
 				},
 				{
@@ -1048,12 +938,12 @@
 										{
 											"class":"Lime.Color4Animator, Lime",
 											"ReadonlyKeys":[
-												[0,0,[0]],
-												[6,0,[4278190080]],
-												[10,0,[4278190080]],
-												[40,0,[4278190080]],
-												[46,0,[4278190080]],
-												[50,0,[0]]
+												[0,0,[4533580]],
+												[6,0,[4282723660]],
+												[10,0,[4282723660]],
+												[40,0,[4282723660]],
+												[46,0,[4282723660]],
+												[50,0,[4533580]]
 											],
 											"TargetProperty":"Color"
 										},
@@ -1070,47 +960,22 @@
 											"TargetProperty":"Scale"
 										}
 									],
-									"Color":[0],
+									"Color":[4533580],
 									"Id":"BulletCheck",
 									"Pivot":[0.40171,0.66091],
-									"Position":[21.162865,25.447626],
+									"Position":[18.891685,26.583185],
 									"Scale":[0.32236573,0.32236573],
 									"Size":[65,54],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
 										"SerializationPath":"Data/UI/IcoCheck"
 									}
-								},
-								{
-									"class":"Lime.Image, Lime",
-									"Animators":[
-										{
-											"class":"Lime.Vector2Animator, Lime",
-											"ReadonlyKeys":[
-												[0,0,[0,0]],
-												[1,0,[0.5908704,0.5908704]],
-												[40,0,[0.5908704,0.5908704]],
-												[41,0,[0,0]]
-											],
-											"TargetProperty":"Scale"
-										}
-									],
-									"Color":[4294967295],
-									"Id":"BtnOrange",
-									"Pivot":[0.5,0.5],
-									"Position":[24.831238,20.144005],
-									"Scale":[0,0],
-									"Size":[105,105],
-									"Texture":{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/BtnOrange"
-									}
 								}
 							],
 							"Pivot":[0.5,0.5],
 							"Position":[29.21643,32.21643],
-							"Scale":[0.8806,0.8806],
-							"Size":[47.3913,47.10146]
+							"Size":[47.3913,47.10146],
+							"TangerineFlags":4
 						},
 						{
 							"class":"Lime.Button, Lime",
@@ -1167,39 +1032,34 @@
 							"Id":"BtnCheck",
 							"Nodes":[
 								{
-									"class":"Lime.NineGrid, Lime",
+									"class":"Lime.Image, Lime",
 									"Animators":[
 										{
 											"class":"Lime.Vector2Animator, Lime",
 											"ReadonlyKeys":[
-												[38,0,[1.12371,1.12371]],
-												[40,0,[0.98909,0.82834]],
-												[42,0,[0.98909,0.82834]],
-												[46,0,[1.12371,1.12371]]
+												[38,2,[0.27218452,0.27218452]],
+												[40,2,[0.341913,0.341913]],
+												[42,2,[0.341913,0.341913]],
+												[46,2,[0.27218452,0.27218452]]
 											],
 											"TargetProperty":"Scale"
 										}
 									],
-									"BottomOffset":0.4,
-									"Color":[4288256409],
-									"Id":"NineGrid2",
-									"LeftOffset":0.4,
+									"Color":[4285504745],
+									"Id":"Shock1",
 									"Pivot":[0.5,0.5],
-									"Position":[29.21646,29.21646],
-									"RightOffset":0.4,
-									"Rotation":-180,
-									"Scale":[1.12371,1.12371],
-									"Size":[52,52],
+									"Position":[27.161728,28.333374],
+									"Scale":[0.27218452,0.27218452],
+									"Size":[294,300],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/WinGrey"
-									},
-									"TopOffset":0.4
+										"SerializationPath":"/Common/Masks/Shock1"
+									}
 								}
 							],
-							"Pivot":[0.5,0.5],
-							"Position":[136.49506,29],
-							"Size":[270.9901,58]
+							"Pivot":[0,0.5],
+							"Position":[1,29],
+							"Size":[390,58]
 						},
 						{
 							"class":"Lime.SimpleText, Lime",
@@ -1225,19 +1085,17 @@
 							"Id":"Text",
 							"Pivot":[0,0.5],
 							"Position":[76,29],
-							"Size":[197.33325,55],
+							"Size":[314.07492,55],
 							"Spacing":-14,
-							"Text":"Voice",
+							"Text":"Голос",
 							"TextColor":[4287880191],
 							"VAlignment":1
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[2492.567,-1381.9314],
-					"Rotation":-4.2667847,
+					"Position":[259.29953,719],
 					"Size":[58.43292,58.43292],
-					"TangerineFlags":2,
-					"Visible":false
+					"TangerineFlags":4
 				},
 				{
 					"class":"Lime.Frame, Lime",
@@ -1280,12 +1138,12 @@
 										{
 											"class":"Lime.Color4Animator, Lime",
 											"ReadonlyKeys":[
-												[0,0,[0]],
-												[6,0,[4278190080]],
-												[10,0,[4278190080]],
-												[40,0,[4278190080]],
-												[46,0,[4278190080]],
-												[50,0,[0]]
+												[0,0,[4533580]],
+												[6,0,[4282723660]],
+												[10,0,[4282723660]],
+												[40,0,[4282723660]],
+												[46,0,[4282723660]],
+												[50,0,[4533580]]
 											],
 											"TargetProperty":"Color"
 										},
@@ -1302,78 +1160,22 @@
 											"TargetProperty":"Scale"
 										}
 									],
-									"Color":[0],
+									"Color":[4533580],
 									"Id":"BulletCheck",
 									"Pivot":[0.40171,0.66091],
-									"Position":[21.162865,25.447626],
+									"Position":[18.891685,26.583185],
 									"Scale":[0.32236573,0.32236573],
 									"Size":[65,54],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
 										"SerializationPath":"Data/UI/IcoCheck"
 									}
-								},
-								{
-									"class":"Lime.Image, Lime",
-									"Animators":[
-										{
-											"class":"Lime.Vector2Animator, Lime",
-											"ReadonlyKeys":[
-												[0,0,[0,0]],
-												[1,0,[0.5908704,0.5908704]],
-												[40,0,[0.5908704,0.5908704]],
-												[41,0,[0,0]]
-											],
-											"TargetProperty":"Scale"
-										}
-									],
-									"Color":[4294967295],
-									"Id":"BtnOrange",
-									"Pivot":[0.5,0.5],
-									"Position":[24.831238,20.144005],
-									"Scale":[0,0],
-									"Size":[105,105],
-									"Texture":{
-										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/BtnOrange"
-									}
 								}
 							],
 							"Pivot":[0.5,0.5],
 							"Position":[29.21643,32.21643],
-							"Scale":[0.8806,0.8806],
-							"Size":[47.3913,47.10146]
-						},
-						{
-							"class":"Lime.SimpleText, Lime",
-							"Color":[4294967295],
-							"Components":[
-								{
-									"class":"Lime.SignedDistanceFieldComponent, Lime",
-									"Gradient":[
-										{
-											"Color":[4294967295]
-										},
-										{
-											"Color":[4278190080],
-											"Position":1
-										}
-									]
-								}
-							],
-							"Font":{
-								"Name":"Text"
-							},
-							"FontHeight":41,
-							"Id":"Text",
-							"OverflowMode":1,
-							"Pivot":[0,0.5],
-							"Position":[76,29],
-							"Size":[227.333,55],
-							"Spacing":-14,
-							"Text":"Уведомления",
-							"TextColor":[4289572269],
-							"VAlignment":1
+							"Size":[47.3913,47.10146],
+							"TangerineFlags":4
 						},
 						{
 							"class":"Lime.Button, Lime",
@@ -1427,50 +1229,89 @@
 								}
 							],
 							"Color":[4294967295],
-							"Enabled":false,
 							"Id":"BtnCheck",
 							"Nodes":[
 								{
-									"class":"Lime.NineGrid, Lime",
+									"class":"Lime.Image, Lime",
 									"Animators":[
 										{
 											"class":"Lime.Vector2Animator, Lime",
 											"ReadonlyKeys":[
-												[38,0,[1.12371,1.12371]],
-												[40,0,[0.98909,0.82834]],
-												[42,0,[0.98909,0.82834]],
-												[46,0,[1.12371,1.12371]]
+												[38,2,[0.27218452,0.27218452]],
+												[40,2,[0.341913,0.341913]],
+												[42,2,[0.341913,0.341913]],
+												[46,2,[0.27218452,0.27218452]]
 											],
 											"TargetProperty":"Scale"
 										}
 									],
-									"BottomOffset":0.4,
-									"Color":[1922668953],
-									"Id":"NineGrid2",
-									"LeftOffset":0.4,
+									"Color":[4285504745],
+									"Id":"Shock1",
 									"Pivot":[0.5,0.5],
-									"Position":[29.21646,29.21646],
-									"RightOffset":0.4,
-									"Rotation":-180,
-									"Scale":[1.12371,1.12371],
-									"Size":[52,52],
+									"Position":[27.161728,28.333374],
+									"Scale":[0.27218452,0.27218452],
+									"Size":[294,300],
 									"Texture":{
 										"class":"Lime.SerializableTexture, Lime",
-										"SerializationPath":"Data/UI/WinGrey"
-									},
-									"TopOffset":0.4
+										"SerializationPath":"/Common/Masks/Shock1"
+									}
 								}
 							],
-							"Pivot":[0.5,0.5],
-							"Position":[136.49506,29],
-							"Size":[270.9901,58],
-							"TangerineFlags":4
+							"Pivot":[0,0.5],
+							"Position":[1,29],
+							"Size":[390,58]
+						},
+						{
+							"class":"Lime.SimpleText, Lime",
+							"Color":[4294967295],
+							"Components":[
+								{
+									"class":"Lime.SignedDistanceFieldComponent, Lime",
+									"Gradient":[
+										{
+											"Color":[4294967295]
+										},
+										{
+											"Color":[4278190080],
+											"Position":1
+										}
+									]
+								}
+							],
+							"Font":{
+								"Name":"Text"
+							},
+							"FontHeight":41,
+							"Id":"Text",
+							"OverflowMode":1,
+							"Pivot":[0,0.5],
+							"Position":[76,29],
+							"Size":[327.333,55],
+							"Spacing":-14,
+							"Text":"Уведомления",
+							"TextColor":[4287880191],
+							"VAlignment":1
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[229.70047,559.87744],
-					"Rotation":8.952881,
+					"Position":[220.29953,1019.87744],
 					"Size":[58.43292,58.43292]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":3,
+					"Color":[4281146418],
+					"Id":"WornedBar",
+					"Pivot":[0.49999994,0.4999995],
+					"Position":[383.99994,873.66656],
+					"Rotation":-2.0450897,
+					"Scale":[1.2986903,1.2986903],
+					"Size":[688,125],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/UI/WornedBar"
+					}
 				},
 				{
 					"class":"Lime.Frame, Lime",
@@ -1699,73 +1540,107 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[237.70047,482.87744],
-					"Rotation":-4.2667847,
-					"Size":[58.43292,58.43292]
-				},
-				{
-					"class":"Lime.SimpleText, Lime",
-					"Anchors":48,
-					"Color":[4294967295],
-					"Components":[
-						{
-							"class":"Lime.SignedDistanceFieldComponent, Lime",
-							"Dilate":2,
-							"Gradient":[
-								{
-									"Color":[4294967295]
-								},
-								{
-									"Color":[4278190080],
-									"Position":1
-								}
-							]
-						}
-					],
-					"Font":{
-						"Name":"Labels"
-					},
-					"FontHeight":60,
-					"HAlignment":1,
-					"Id":"Title",
-					"OverflowMode":1,
-					"Pivot":[0.5,1],
-					"Position":[354.66647,179.95714],
-					"Rotation":-3.0702667,
-					"Size":[337,64],
-					"Text":"Настройки",
-					"VAlignment":1
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Anchors":48,
-					"Color":[4294967295],
-					"ContentsPath":"Externals/TitleBar",
-					"Id":"TitleBar",
-					"Pivot":[0.5,0.5],
-					"Position":[346.01935,149.43588],
-					"Rotation":-3.0702667,
-					"Scale":[0.85744077,0.85744077],
-					"Size":[484,128],
-					"TangerineFlags":1024
-				},
-				{
-					"class":"Lime.Frame, Lime",
-					"Anchors":48,
-					"Color":[4294967295],
-					"ContentsPath":"Externals/Win",
-					"Id":"Win",
-					"Pivot":[0.5,0.5],
-					"Position":[384,397.1643],
-					"Rotation":-3.5308838,
-					"Scale":[1.0807222,1.0577639],
-					"Size":[512,512],
-					"TangerineFlags":1796
+					"Position":[212.29953,714.402],
+					"Size":[58.43292,58.43292],
+					"Visible":false
 				}
 			],
 			"Pivot":[0.5,0.5],
 			"Position":[384,683],
-			"Size":[768,768]
+			"Size":[768,1366]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Anchors":11,
+			"Animators":[
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"AnimationId":"Appear",
+					"ReadonlyKeys":[
+						[0,0,[4294967295]],
+						[5,0,[16777215]],
+						[10,0,[16777215]],
+						[11,0,[4294967295]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[4294967295],
+			"Id":"BottomPanel",
+			"Nodes":[
+				{
+					"class":"Lime.Button, Lime",
+					"Anchors":48,
+					"Color":[4294967295],
+					"ContentsPath":"Externals/BtnOk",
+					"Id":"BtnOk",
+					"Pivot":[0.5,0.5],
+					"Position":[384,-5.5],
+					"Scale":[1.553751,1.553751],
+					"Size":[128,128]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":11,
+					"Animators":[
+						{
+							"class":"Lime.Color4Animator, Lime",
+							"AnimationId":"Appear",
+							"ReadonlyKeys":[
+								[0,0,[939524096]],
+								[38,0,[939524096]],
+								[44,0,[0]]
+							],
+							"TargetProperty":"Color"
+						}
+					],
+					"Color":[939524096],
+					"Id":"LineGradient",
+					"Pivot":[0.5,1],
+					"Position":[384.00003,290.35767],
+					"Size":[807.5899,338.01846],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"/Common/Masks/LineGradient"
+					},
+					"UV1":[1,0.5]
+				},
+				{
+					"class":"Lime.Image, Lime",
+					"Anchors":3,
+					"Color":[4278673056],
+					"Id":"WornedBar",
+					"Pivot":[0.49999994,0.4999995],
+					"Position":[419.36047,73.86973],
+					"Rotation":4.2630463,
+					"Scale":[1.7505044,1.7505044],
+					"Size":[688,125],
+					"TangerineFlags":4,
+					"Texture":{
+						"class":"Lime.SerializableTexture, Lime",
+						"SerializationPath":"Data/UI/WornedBar"
+					}
+				}
+			],
+			"Pivot":[1,1],
+			"Position":[768,1366],
+			"Size":[768,149],
+			"TangerineFlags":4
+		},
+		{
+			"class":"Lime.NineGrid, Lime",
+			"Anchors":48,
+			"Color":[4294967295],
+			"Id":"Match3BG",
+			"Pivot":[0.5,0.5],
+			"Position":[384,545.0762],
+			"Size":[768,1664],
+			"TangerineFlags":4,
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Game/Levels/Data/Match3BG"
+			}
 		},
 		{
 			"class":"Lime.Frame, Lime",
@@ -1791,6 +1666,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

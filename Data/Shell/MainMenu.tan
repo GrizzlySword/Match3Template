@@ -120,7 +120,7 @@
 					"ContentsPath":"Externals/BtnOptions",
 					"Id":"BtnOptions",
 					"Pivot":[0.5,0.5],
-					"Position":[617.03687,923.37],
+					"Position":[607.03687,908.37],
 					"Size":[128,128]
 				},
 				{
@@ -214,20 +214,6 @@
 			"Id":"Logos",
 			"Nodes":[
 				{
-					"class":"Lime.Image, Lime",
-					"Anchors":16,
-					"Color":[2868903935],
-					"Id":"DarkBig",
-					"Pivot":[0.5,0.5],
-					"Position":[489.78406,53],
-					"Scale":[0.32346013,0.32346013],
-					"Size":[250,250],
-					"Texture":{
-						"class":"Lime.SerializableTexture, Lime",
-						"SerializationPath":"Data/Splash/DarkBig"
-					}
-				},
-				{
 					"class":"Lime.Button, Lime",
 					"Anchors":16,
 					"Animations":[
@@ -303,7 +289,7 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[384,58.000008],
+					"Position":[448.92487,58.000008],
 					"Size":[102.73253,112]
 				},
 				{
@@ -383,7 +369,7 @@
 						}
 					],
 					"Pivot":[0.5,0.5],
-					"Position":[274.15027,58.000008],
+					"Position":[319.07513,58.000008],
 					"Size":[102.73253,112]
 				},
 				{
@@ -453,6 +439,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

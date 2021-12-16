@@ -53,41 +53,6 @@
 	"Nodes":[
 		{
 			"class":"Lime.Image, Lime",
-			"Animators":[
-				{
-					"class":"Lime.Vector2Animator, Lime",
-					"ReadonlyKeys":[
-						[28,2,[0.85172063,0.85172063]],
-						[30,2,[0.6910123,0.6910123]],
-						[31,2,[0.6910123,0.6910123]],
-						[35,2,[0.85172063,0.85172063]]
-					],
-					"TargetProperty":"Scale"
-				},
-				{
-					"class":"Lime.Color4Animator, Lime",
-					"ReadonlyKeys":[
-						[10,0,[4282723660]],
-						[43,1,[4282729797]]
-					],
-					"TargetProperty":"Color"
-				}
-			],
-			"Color":[4282723660],
-			"Id":"Ico",
-			"Pivot":[0.5,0.5],
-			"Position":[64,64],
-			"Rotation":6.723465,
-			"Scale":[0.85172063,0.85172063],
-			"Shader":3,
-			"Size":[72,75],
-			"Texture":{
-				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Shell/Data/UI/IcoGear"
-			}
-		},
-		{
-			"class":"Lime.Image, Lime",
 			"Anchors":48,
 			"Animators":[
 				{
@@ -107,170 +72,77 @@
 			"Pivot":[0.5,0.5],
 			"Position":[64,63],
 			"Rotation":6.3155975,
-			"Scale":[0.9281813,0.7550999],
+			"Scale":[1.3808005,1.3808005],
 			"Size":[128,128],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Common/Masks/CircleBlured"
+				"SerializationPath":"/Common/Masks/CircleBluredMore"
 			}
 		},
 		{
-			"class":"Lime.DistortionMesh, Lime",
+			"class":"Lime.Image, Lime",
 			"Animators":[
-				{
-					"class":"Lime.Animator`1[[Lime.ITexture, Lime]], Lime",
-					"ReadonlyKeys":[
-						[
-							10,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/UI/BtnOrange"
-							}
-						],
-						[
-							42,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"BtnOrange"
-							}
-						],
-						[
-							43,
-							0,
-							{
-								"class":"Lime.SerializableTexture, Lime",
-								"SerializationPath":"/Shell/Data/UI/BtnDis"
-							}
-						]
-					],
-					"TargetProperty":"Texture"
-				},
 				{
 					"class":"Lime.Vector2Animator, Lime",
 					"ReadonlyKeys":[
-						[28,2,[1,1]],
-						[30,2,[1.13623,1.0537333]],
-						[31,2,[1.13623,1.0537333]],
-						[33,2,[1.0422289,1.1095501]],
-						[35,2,[1,1]]
+						[28,2,[0.85172063,0.85172063]],
+						[30,2,[0.6910123,0.6910123]],
+						[31,2,[0.6910123,0.6910123]],
+						[35,2,[0.85172063,0.85172063]]
+					],
+					"TargetProperty":"Scale"
+				},
+				{
+					"class":"Lime.Color4Animator, Lime",
+					"ReadonlyKeys":[
+						[42,1,[4285504745]],
+						[43,1,[4288585374]]
+					],
+					"TargetProperty":"Color"
+				}
+			],
+			"Color":[4285504745],
+			"Id":"Ico",
+			"Pivot":[0.5,0.5],
+			"Position":[64,64],
+			"Rotation":6.723465,
+			"Scale":[0.85172063,0.85172063],
+			"Shader":3,
+			"Size":[72,75],
+			"Texture":{
+				"class":"Lime.SerializableTexture, Lime",
+				"SerializationPath":"/Shell/Data/UI/IcoGear"
+			}
+		},
+		{
+			"class":"Lime.Image, Lime",
+			"Animators":[
+				{
+					"class":"Lime.Vector2Animator, Lime",
+					"ReadonlyKeys":[
+						[28,2,[0.4435818,0.4435818]],
+						[30,2,[0.557219,0.557219]],
+						[31,2,[0.557219,0.557219]],
+						[35,2,[0.4435818,0.4435818]]
 					],
 					"TargetProperty":"Scale"
 				}
 			],
-			"Color":[4294967295],
-			"Id":"Btn",
-			"Nodes":[
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"0;0",
-					"Position":[0.0031747,0.031745985]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"0;1",
-					"Position":[0.31031755,0.031745985],
-					"UV":[0.33333334,0]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"0;2",
-					"Position":[0.738889,0.053174555],
-					"UV":[0.6666667,0]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"0;3",
-					"Position":[1.0198413,0.1007936],
-					"UV":[1,0]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"1;0",
-					"Position":[0.0031747,0.3384126],
-					"UV":[0,0.33333334]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"1;1",
-					"Position":[0.31031755,0.3384126],
-					"UV":[0.33333334,0.33333334]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"1;2",
-					"Position":[0.738889,0.3865079],
-					"UV":[0.6666667,0.33333334]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"1;3",
-					"Position":[1.0007937,0.40793645],
-					"UV":[1,0.33333334]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"2;0",
-					"Position":[0.010657683,0.5536508],
-					"UV":[0,0.5595238]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"2;1",
-					"Position":[0.33412707,0.6650793],
-					"UV":[0.33333334,0.6666667]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"2;2",
-					"Position":[0.6185714,0.7261903],
-					"UV":[0.6666667,0.6666667]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"2;3",
-					"Position":[0.9209524,0.7261903],
-					"UV":[1,0.6666667]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"3;0",
-					"Position":[0.038684882,0.8936054],
-					"UV":[0,1]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"3;1",
-					"Position":[0.2978687,0.9324261],
-					"UV":[0.37142858,1]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"3;2",
-					"Position":[0.6196296,0.9595237],
-					"UV":[0.6666667,1]
-				},
-				{
-					"class":"Lime.DistortionMeshPoint, Lime",
-					"Id":"3;3",
-					"Position":[0.85349196,0.97195756],
-					"UV":[1,1]
-				}
-			],
-			"NumCols":3,
-			"NumRows":3,
+			"Color":[4282723660],
+			"Id":"Shock1",
 			"Pivot":[0.5,0.5],
 			"Position":[64,64],
-			"Size":[105,105],
+			"Scale":[0.4435818,0.4435818],
+			"Size":[294,300],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime",
-				"SerializationPath":"/Shell/Data/UI/BtnOrange"
+				"SerializationPath":"/Common/Masks/Shock1"
 			}
 		}
 	],
 	"Size":[128,128]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
