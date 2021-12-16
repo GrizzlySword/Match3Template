@@ -19,8 +19,15 @@ namespace Match3Template.Types
 			set
 			{
 				if (Owner.Animations.TryFind("Kind", out var kindAnimation)) {
-					var marker = kindAnimation.Markers[value];
-					Owner.RunAnimation(marker.Id, kindAnimation.Id);
+					var markerName = (value + 1).ToString();
+					var marker = kindAnimation.Markers.TryFind(markerName);
+					if (marker == null) {
+						markerName = (value + 1).ToString("D2");
+						marker = kindAnimation.Markers.TryFind(markerName);
+					}
+					if (marker != null) {
+						Owner.RunAnimation(marker.Id, kindAnimation.Id);
+					}
 				}
 				kind = value;
 			}
