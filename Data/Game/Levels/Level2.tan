@@ -154,7 +154,8 @@
 					"AllowedPieces":[
 						0,
 						1,
-						2
+						2,
+						3
 					],
 					"BlockerCount":6,
 					"ColumnCount":6,

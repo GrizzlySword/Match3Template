@@ -1,0 +1,38 @@
+{
+	"class":"Lime.Model3DAttachmentParser+ModelAttachmentFormat, Lime",
+	"Animations":{
+		"Take 001":{
+			"Markers":{
+				"FlipStart":{
+					"Action":"Start"
+				},
+				"FlipEnd":{
+					"Action":"Jump",
+					"Frame":15,
+					"JumpTarget":"FlipStart"
+				},
+				"Still":{
+					"Action":"Stop",
+					"Frame":16
+				},
+				"SwapStart":{
+					"Action":"Start",
+					"Frame":20
+				},
+				"SwapEnd":{
+					"Action":"Stop",
+					"Frame":40
+				},
+				"SwapBack":{
+					"Action":"Start",
+					"Frame":42
+				},
+				"SwapBackEnd":{
+					"Action":"Stop",
+					"Frame":60
+				}
+			},
+			"SourceAnimationId":"Take 001"
+		}
+	}
+}

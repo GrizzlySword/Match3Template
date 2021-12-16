@@ -35,6 +35,15 @@
 				"SwapBackEnd":{
 					"Action":"Stop",
 					"Frame":131
+				},
+				"FallDown":{
+					"Action":"Start",
+					"Frame":135
+				},
+				"FallDownEnd":{
+					"Action":"Jump",
+					"Frame":160,
+					"JumpTarget":"IdleStart"
 				}
 			},
 			"SourceAnimationId":"Take 001"
