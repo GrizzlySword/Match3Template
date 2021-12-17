@@ -35,25 +35,26 @@
 				{
 					"class":"Lime.Color4Animator, Lime",
 					"ReadonlyKeys":[
-						[0,0,[4073984]],
-						[6,0,[3359517184]],
-						[10,0,[3359517184]],
-						[15,0,[4073984]]
+						[0,0,[4533580]],
+						[6,0,[3695521100]],
+						[10,0,[3695521100]],
+						[15,0,[4533580]]
 					],
 					"TargetProperty":"Color"
 				}
 			],
-			"Color":[4073984],
+			"Color":[4533580],
 			"Id":"Shade",
 			"Pivot":[0.5,0.5],
-			"Position":[512,384],
+			"Position":[384,384],
 			"Shader":3,
-			"Size":[1024,768],
+			"Size":[768,768],
 			"Texture":{
 				"class":"Lime.SerializableTexture, Lime"
 			}
 		}
 	],
-	"Size":[1024,768]
+	"Size":[768,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 iVBORw0KGgoAAAANSUhEUgAAAJYAAABxCAYAAAA3QFrYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVHhe7cghAcAwAASxupmH+XdUAzNw7AcDQnLO8174XSasMmGVCatMWGXCKhNWmbDKhFUmrDJhlQmrTFhlwioTVpmwyoRVJqwyYZUJq0xYZcIqE1aZsMqEVSasMmGVCatMWGXCKhNWmbDKhFUmrDJhlQmrTFhlwioTVpmwyoRVJqwyYZUJq0xYZcIqE1aZsMqEVSasMmGVCatMWGXCKhNWmbDKhFUmrDJhlQmrTFhlwioTVpmwyoRVJqwyYZUJq0xYZcIqE1aZsMqEVSasMmGVCatMWGXCKhNWmbDKhFUmrDJhlQmrTFhlwioTVpmwyoRVJqwyYZUJq0xYZcIqE1aZsMqEVSasMmGVCatMWGXCKhNWmbDKhFUmrDJhlQmrTFhlwioTVpmwyoTJez9MOfTSV3sDewAAAABJRU5ErkJggg==
