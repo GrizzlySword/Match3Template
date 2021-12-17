@@ -1060,8 +1060,7 @@
 						}
 					],
 					"ContentsPath":"Items/04Battery",
-					"Id":"Model3D",
-					"Position":[0,0,0.05]
+					"Id":"Model3D"
 				},
 				{
 					"class":"Lime.Camera3D, Lime",
@@ -1407,6 +1406,8 @@
 	"Pivot":[0.5,0.5],
 	"Size":[90,90]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
+
 
 
 

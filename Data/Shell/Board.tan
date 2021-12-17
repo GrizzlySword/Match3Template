@@ -478,7 +478,7 @@
 				{
 					"class":"Lime.Animator`1[[System.String]], Lime",
 					"ReadonlyKeys":[
-						[0,0,"02@Color,Shown@Show,None@Selection"]
+						[0,0,"01@Kind,Shown@Show,None@Selection"]
 					],
 					"TargetProperty":"Trigger"
 				}
@@ -531,6 +531,7 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
