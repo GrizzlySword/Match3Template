@@ -415,7 +415,7 @@
 			"ContentsPath":"/Game/Match3/MultiMarble",
 			"Id":"MultiMarble",
 			"Pivot":[0.5,0.5],
-			"Position":[665.6666,109],
+			"Position":[602.7916,110.33325],
 			"Size":[90,90]
 		},
 		{
@@ -433,7 +433,7 @@
 			"ContentsPath":"/Game/Match3/MultiMarble",
 			"Id":"MultiMarble",
 			"Pivot":[0.5,0.5],
-			"Position":[559.75,109],
+			"Position":[512.4583,110.33325],
 			"Size":[90,90]
 		},
 		{
@@ -451,7 +451,7 @@
 			"ContentsPath":"/Game/Match3/MultiMarble",
 			"Id":"MultiMarble",
 			"Pivot":[0.5,0.5],
-			"Position":[453.8333,109],
+			"Position":[422.125,110.33325],
 			"Size":[90,90]
 		},
 		{
@@ -469,7 +469,7 @@
 			"ContentsPath":"/Game/Match3/MultiMarble",
 			"Id":"MultiMarble",
 			"Pivot":[0.5,0.5],
-			"Position":[347.91666,109],
+			"Position":[331.7917,110.33325],
 			"Size":[90,90]
 		},
 		{
@@ -487,7 +487,52 @@
 			"ContentsPath":"/Game/Match3/MultiMarble",
 			"Id":"MultiMarble",
 			"Pivot":[0.5,0.5],
-			"Position":[242,109],
+			"Position":[241.45834,110.33325],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/Cell",
+			"Id":"Cell",
+			"Pivot":[0.5,0.5],
+			"Position":[602.7916,110.33325],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/Cell",
+			"Id":"Cell",
+			"Pivot":[0.5,0.5],
+			"Position":[512.4583,110.33325],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/Cell",
+			"Id":"Cell",
+			"Pivot":[0.5,0.5],
+			"Position":[422.125,110.33325],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/Cell",
+			"Id":"Cell",
+			"Pivot":[0.5,0.5],
+			"Position":[331.7917,110.33325],
+			"Size":[90,90]
+		},
+		{
+			"class":"Lime.Frame, Lime",
+			"Color":[4294967295],
+			"ContentsPath":"/Game/Match3/Cell",
+			"Id":"Cell",
+			"Pivot":[0.5,0.5],
+			"Position":[241.45837,110.33325],
 			"Size":[90,90]
 		},
 		{
@@ -531,6 +576,7 @@
 	],
 	"Size":[1366,768]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 

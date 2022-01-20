@@ -431,6 +431,19 @@
 					"Nodes":[
 						{
 							"class":"Lime.Image, Lime",
+							"Color":[4294967295],
+							"Id":"ZAvatar",
+							"Pivot":[0.5,0.5],
+							"Position":[77.846855,79.21846],
+							"Scale":[0.71143246,0.71143246],
+							"Size":[128,128],
+							"Texture":{
+								"class":"Lime.SerializableTexture, Lime",
+								"SerializationPath":"Data/UI/ZAvatar"
+							}
+						},
+						{
+							"class":"Lime.Image, Lime",
 							"Anchors":48,
 							"Color":[4285504745],
 							"Id":"WinBiege",
@@ -1666,6 +1679,7 @@
 	],
 	"Size":[768,1366]
 }{8069CDD4-F02F-4981-A3CB-A0BAD4018D00}
+
 
 
 
